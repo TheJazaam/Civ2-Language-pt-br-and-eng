@@ -1,0 +1,478 @@
+;
+;		labels.txt2
+;
+
+@STRINGHEAP
+11000 ; don't change: controls string heap size
+
+@POPUPS
+OK
+Ajuda----
+Cancelar
+Personalizar
+
+
+@LABELS
+458
+a.C.
+d.C.
+Sid Meier's Civilization II
+Criando Sprites
+Mapa
+Status
+Mundo
+Cidade
+Criando Mundo
+Movendo Unidades
+Exibindo Peças
+Loc.
+Movimentos
+Veterana
+NENHUM
+Bárbaros
+Bárbaro
+Átila
+Rio
+Ferrovia
+Estrada
+Terra Arável
+Mineração
+Irrigação
+Mais
+Unidades
+Sem Ordens
+Fim de Jogada
+Tecle ENTER
+Aldeia
+Povo
+Cidade de
+Zoom para Cidade
+Continuar
+População
+Comprar
+Mudar
+Sair
+Exibir
+Informação
+Feliz
+Mapa
+Rebatizar
+Comida Estocada
+Rodadas
+Rodada
+Fortaleza
+Poluição
+sábios
+cientistas
+&Criar Nova Cidade|b
+&Unir à Cidade|b
+Criar &Estrada|r
+Criar &Ferrovia|r
+Criar &Irrigação|i
+Mudar Para %STRING0|i
+Criar &Minas|m
+Mudar Para %STRING0|m
+Estabelecer &Cidade-Base|h
+&Voltar Para Cidade Mais Próxima|h
+Transf&ormar em %STRING0|o
+&Melhorar Terra Arável|i
+Selecionar Unidade a Ativar
+Recursos Urbanos
+Comida
+Superávit
+Sustento
+Desperdício
+Produção
+Riqueza
+Corrupção
+Imp.
+Lux.
+Ciên.
+Fome
+Escassez
+Trapaça!
+Todos!
+Nenhuma Vista em Especial
+Mapa Inteiro
+Nenhum Jogador Humano
+Sem mudanças.
+Eliminar ordens.
+Descansar / Embarcar no próximo navio.
+Fortificar.
+Mover-se para a frente.
+Oferece
+Procura
+Maravilhas
+Impostos
+Luxos
+Ciência
+Auto
+Dízimos
+desenvolvem
+adquiriram
+de
+Base Aérea
+Levante bárbaro
+Grande horda bárbara
+Agitação nativa
+Revolta camponesa
+Levante guerrilheiro
+Fanáticos religiosos em armas
+Checar Inteligência
+ele
+ela
+"Aceitaria %STRING4?"
+exigimos
+solicitamos
+insistimos, nos termos de nossa aliança,
+gratamente
+calorosamente
+cordialmente
+Oferta
+estender nosso
+assinar um
+o
+a
+Selecionar unidade a oferecer
+Em Produção
+Pré-Requisitos
+Possibilita
+com
+Unidade
+Melhoramento
+Pré-Requisito
+Força de Ataque
+Força de Defesa
+Ritmo de Movimento
+Pontos de Impacto
+Poder de Fogo
+Custo
+Primeiro
+Desordem
+Custo Total
+Renda Total
+Descobertas
+Infeliz
+Resignado
+de
+Aliado
+Paz
+Cessar-Fogo
+Guerra
+Sem Embaixada
+Agressivo
+Racional
+Expansionista
+Perfeccionista
+Civilizado
+Militarista
+Governo
+Capital
+Tesouro
+Militar
+Em
+Contato
+Manutenção
+Expira
+Criar Ferrovia
+Continuar movendo-se.
+Estabelecer rota comercial.
+Ajudar a criar Maravilha.
+Ataq.
+Def.
+Movimento
+Impactos
+Poder
+Ataque
+ADM
+PI
+Perdido
+de
+capturam
+libertam
+capturada
+libertada
+Perto de
+Sustentada por esta cidade.
+Dissolver
+ou
+comissiona
+lança
+descobre
+confere
+completa
+cria
+produz
+Zoom para Cidade-Base.
+Ativar Unidade.
+Ativar Unidade e Fechar Exibição da Cidade.
+Suprimentos de Comida
+Sprites...
+Testar Vista Diagonal
+Avanços
+Unidades
+Cidades 
+Estrutura
+Propulsão
+Combustível
+Habitação
+Apoio Vital
+Painel Solar
+Sustento
+Energia
+Massa
+Tempo de Voo
+Prob. de sucesso
+t
+anos
+Lançada
+Pousou
+Lançamento
+Gráfico de força de Civilization
+O(A)
+em
+Civilização
+Chega a
+e
+Imaculado
+Excelente
+Honroso
+Questionável
+Desonroso
+Pobre
+Desprezível
+Atroz
+Patético
+Fraco
+Inadequado
+Moderado
+Forte
+Poderoso
+Supremo
+Movido a Fusão!
+Pesquisando
+Grátis
+Salvar Arquivos
+Selecionar Nome Arquivo Partida Salva
+Selecionar Partida a Carregar
+Continuar
+Governos
+o(a)
+Criando
+Inexplorado
+Monólito da Idade do Bronze
+Fórum Clássico
+Pavilhão Oriental
+Castelo Medieval
+Industrial Antigo
+Moderno
+Extra
+Extra
+OK
+Cancelar
+Taxa Máxima
+Como Devemos Distribuir a Fartura?
+Travar
+Selecionar Mapa a Carregar
+Selecionar Nome Arquivo Mapa Salvo
+Arquivos de Mapas
+Ambos
+Ferramentas
+Editor de Mapa de Civilization II
+Pintar: Shift+LEFT
+Apanhar: Shift+RIGHT
+Adicionar Artigo: Shift+LEFT
+Excluir Artigo: Shift+RIGHT
+LITORAL PROTEGIDO
+AUTO-ROLAGEM
+Pintura
+Pincel
+Tamanho do Mundo
+Especial
+Iniciar Cidades
+Cursor
+1x1
+3x3
+5x5
+Cruzar
+Raio Urbano
+?
+Plano
+Redondo
+Esperando Jogadores
+Partidas Disponíveis
+Aceitar Jogador
+Rejeitar Jogador
+Retirar da Partida
+Iniciar Partida
+Quer Jogar
+Vai Jogar
+NENHUM AINDA
+Entrar na Partida
+Partida de
+Esperando
+Configurando
+Escolher Retrato
+Conselho Supremo
+Vista Estática
+Rastrear Movimentos Amigos
+Rastrear Movimentos Inimigos
+Rastrear Todos os Movimentos
+Falar Livremente
+(Esperando por outros...)
+Dissolver Unidade
+exige
+não exige
+Negociando com
+Oferecemos
+oferecer
+Oferecer Tratado
+Oferecer Ouros
+Oferecer Tecnologia
+Oferecer Mapas
+Oferecer D. de Guerra
+Rejeitar Oferta
+Retirar Oferta
+Propor este Acordo
+Aliança
+Tratado de Paz
+Compartilhar Mapas
+Ouros
+Auto Desligado
+Prévio
+Próximo
+Fechar
+Império
+Reino
+República Popular
+Sacro Império
+República
+Estados Unidos
+STATUS DA CIDADE
+MINISTRO DA DEFESA
+MINISTRO DO EXTERIOR - Relatório da Inteligência
+ASSESSOR DE ATITUDE
+ASSESSOR ECONÔMICO
+ASSESSOR CIENTÍFICO
+MARAVILHAS DO MUNDO
+CINCO MAIORES CIDADES
+Demografia
+PONTUAÇÃO DA CIVILIZAÇÃO
+Estatística  
+Baixas
+ativa 
+em prod.
+Carregar
+Ar
+Ar-Ar
+Ver 2
+Ign. ZC
+Ign. Muralhas
+Anfíbia
+Carregar Mísseis
+Carregar Ar
+Salto
+Tudo Estrada
+x2 vs. Montada
+x2 vs. Aérea 
+Costeiro
+Só Fundamentalismo
+Subs
+Riqueza da Cidade
+Custos de Manutenção
+Total Ciência
+Oferta e Procura
+Descobertas a Cada
+Rodadas
+Avanço da Civilização Realizado
+Objetivo
+O(A)
+Índice de Aprovação:
+População:
+PIB:
+Manufatura:
+Área:
+Alfabetização:
+Doença:
+Poluição:
+Expectativa de Vida:
+Tamanho das Famílias:
+Serviço Militar:
+Renda Anual:
+Produtividade:
+Mt
+milhas2
+t
+anos
+anos
+crianças
+milhões
+per capita
+1
+2
+3
+4
+5
+6
+7
+8
+9
+Cidadãos
+Realizações
+Espaçonave
+Paz
+Pontuação Total
+Bônus
+possível
+MODO TRAPAÇA
+Trapaceiro
+COTAÇÃO DA CIVILIZAÇÃO
+Lembrando seu reinado,
+o povo sempre o considerará . . .
+Arquivos de Cenários
+Selecionar Nome Arquivo Cenário
+Selecionar Cenário a Carregar
+CENÁRIO
+SEM CENÁRIO
+jan.
+fev.
+mar.
+abr.
+maio
+jun.
+jul.
+ago.
+set.
+out.
+nov.
+dez.
+OBJETIVO
+Total Objetivos
+Objetivos
+Vitória Decisiva
+Vitória Menor
+Impasse
+Derrota Menor
+Derrota Decisiva
+Externo
+Atitude
+CIVILIZATION II: HALL DA FAMA
+para
+Pontuação
+Cotação da Civilização
+Limpar
+Unidades Sustentadas
+Melhoramentos Urbanos
+Cidadãos
+Mapa de Recursos
+Unidades Presentes
+Mapa de Sustento
+Análise de Felicidade
+Chegada Estimada
+Conquistado em
+Clique no mouse para continuar...
+PONTUAÇÃO COMPLETA
+
+
+
+

@@ -1,0 +1,9 @@
+@SCENARIO
+@width=440
+@title=%STRING0
+^^Length: %STRING1 a %STRING2
+Junho de 1940. As divisões blindadas alemãs acabaram de atacar através das Ardenas, estripando as defesas Aliadas e rumando para Paris numa espantosa guerra-relâmpago de apenas seis semanas. Conseguirá Churchill reagrupar suas forças a tempo? Ou a Inglaterra também sucumbirá à máquina de guerra nazista?
+Enquanto isso, no leste, o Urso Russo continua a dormir. Será que o Pacto Molotov-Ribbentrop garantiu mesmo o flanco oriental da Alemanha? Ou o Eixo ainda procurará seu "espaço vital" nas estepes russas?
+
+@end -- this line must be here!
+

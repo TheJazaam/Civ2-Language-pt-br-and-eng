@@ -1,0 +1,358 @@
+Ren Council Text  2/15/96   v2.21
+
+@M1
+0,80, Ministro da Defesa: Crie mais unidades!
+f5, 82,129, Ministro do Exterior: Você destruiria quem podemos usar?
+#, end
+s3, 3146,3172, Assessor Científico: Discordo.
+s4, 3146,3172, Assessor Científico: Discordo.
+a3, 3852,3885, Assessor de Atitude: Discordo.
+t3, 3493,3509, Assessor Econômico: Ora, precisamos é criar Feiras!
+t5, 3493,3509, Assessor Econômico: Ora, precisamos é de Caravanas!
+end
+
+@M2
+131,234, Ministro da Defesa: Precisamos de mais tecnologia bélica!
+f3, 3682,3706, Ministro do Exterior: Discordo.
+t2, 3334,3360, Assessor Econômico: Discordo.
+t4, 3334,3360, Assessor Econômico: Discordo.
+a1, 4091,4130, Assessor de Atitude: Estou preocupado, senhor.
+a3, 3852,3885, Assessor de Atitude: Discordo.
+end
+
+@M3
+236,316, Ministro da Defesa: Precisamos de mais tecnologia naval!
+t2, 3493,3509, Assessor Econômico: Ora, precisamos é de um Sistema Bancário!
+t4, 3493,3509, Assessor Econômico: Ora, precisamos é de Comércio!
+f3, 3682,3706, Ministro do Exterior: Discordo.
+a1, 4091,4130, Assessor de Atitude: Estou preocupado, senhor.
+a3, 3852,3885, Assessor de Atitude: Discordo.
+end
+
+@M4
+318,423, Ministro da Defesa: Crie Quartéis!
+t3, 3601,3627, Assessor Econômico: Discordo. 
+t5, 3601,3627, Assessor Econômico: Discordo.
+t1, 3429,3450, Assessor Econômico: Ora, precisamos de mais impostos, não de mais gastos!
+f5, 3682,3706, Ministro do Exterior: Discordo.
+s3, 3146,3172, Assessor Científico: Discordo.
+s4, 3146,3172, Assessor Científico: Discordo.
+a3, 3852,3885, Assessor de Atitude: Discordo.
+end
+
+@M5
+425,558, Ministro da Defesa: Precisamos criar Muralhas, especialmente na capital.
+t1, 560,620, Assessor Econômico: Idiota! Muralhas custam caro.
+#, end 
+t3, 560,620, Assessor Econômico: Idiota! Não sobrou nada para criar Feiras.
+#, end 
+t5, 560,620, Assessor Econômico: Idiota! Não sobrou nada para criar Caravanas.
+#, end 
+s3, 3146,3172, Assessor Científico: Discordo.
+s4, 3146,3172, Assessor Científico: Discordo.
+f5, 3682,3706, Ministro do Exterior: Discordo.
+a3, 3852,3885, Assessor de Atitude: Discordo.
+t, 3564,3599, Assessor Econômico: Lembre-se dos gastos, excelência...
+end
+
+@M6
+622,744, Ministro da Defesa: Nenhuma queixa, senhor!
+f7, 3659,3680, Ministro do Exterior: Concordo.
+t7, 3307,3332, Assessor Econômico: Concordo.
+s6, 3203,3230, Assessor Científico: Posso falar, senhor?
+s1, 3203,3230, Assessor Científico: Posso falar, senhor?
+a1, 3921,3960, Assessor de Atitude: Podemos falar, senhor? 
+end
+
+@M7
+746,863, Ministro da Defesa: Façamos a guerra!
+f4, 82,129, Ministro do Exterior: Você destruiria quem podemos usar?
+#, end 
+s6, 3122,3144, Assessor Científico: Concordo, e vamos aproveitar para tomar tecnologias.
+f, 865,938, Ministro do Exterior: Pense bem, senhor.
+#, end 
+end
+
+
+@S1
+940,1089, Assessor Científico: Precisamos elevar a taxa de ciência!
+f3, 3659,3680, Ministro do Exterior: Concordo.
+#, a, 3887,3919, Assessor de Atitude: Não lhes dê atenção!
+a1,1272,1328, Assessor de Atitude: Só não diminua a taxa de luxos.
+#, end
+a2, 1272,1328, Assessor de Atitude: Só não diminua a taxa de luxos.
+#, end
+a3, 1272,1328, Assessor de Atitude: Só não diminua a taxa de luxos.
+#, end
+t2, 3307,3332, Assessor Econômico: Concordo.
+t4, 3307,3332, Assessor Econômico: Concordo.
+end
+
+@S2
+1091,1183, Assessor Científico: Deveríamos elevar a taxa de ciência, senhor.
+f3, 3659,3680, Ministro do Exterior: Concordo.
+#, a, 3887,3919, Assessor de Atitude: Não lhes dê atenção!
+t2, 3307,3332, Assessor Econômico: Concordo.
+t4, 3307,3332, Assessor Econômico: Concordo.
+t, 1185,1270, Assessor Econômico: Discordo.
+a1,1272,1328, Assessor de Atitude: Só não diminua a taxa de luxos.
+#, end
+a2, 1272,1328, Assessor de Atitude: Só não diminua a taxa de luxos.
+#, end
+a3, 1272,1328, Assessor de Atitude: Só não diminua a taxa de luxos.
+#, end
+end
+
+@S3
+1330,1460, Assessor Científico: Crie melhoramentos tecnológicos.
+t3, 3334,3360, Assessor Econômico: Discordo.
+t4, 3307,3332, Assessor Econômico: Concordo.
+#, f5, 3708,3734, Ministro do Exterior: Não lhes dê atenção!
+t5, 3334,3360, Assessor Econômico: Discordo.
+t1, 3564,3599, Assessor Econômico: Lembre-se dos gastos, senhor...
+#, end 
+m2, 2938,2964, Ministro da Defesa: Concordo.
+m3, 2938,2964, Ministro da Defesa: Concordo.
+f3, 3659,3680, Ministro do Exterior: Concordo.
+f5,3682,3706, Ministro do Exterior: Discordo.
+a3, 3852,3885, Assessor de Atitude: Discordo.
+end
+
+@S4
+1462,1569, Assessor Científico: Crie rotas comerciais.
+t,3307,3332, Assessor Econômico: Concordo.
+m1, 4612,4676, Ministro da Defesa: Não, deveríamos criar um exército e pilhar!
+#, end 
+m4, 4612,4676, Ministro da Defesa: Não, deveríamos criar um exército e pilhar!
+#, end 
+m5, 2848,2910, Ministro da Defesa: Não! Precisamos de Muralhas.
+m2, 2912,2936, Ministro da Defesa: Concordo.
+#, f5, 3708,3734, Ministro do Exterior: Não lhes dê atenção!
+m3, 2912,2936, Ministro da Defesa: Concordo.
+#, f5, 3708,3734, Ministro do Exterior: Não lhes dê atenção!
+f5, 3682,3706, Ministro do Exterior: Discordo.
+end
+
+@S5
+1571,1632, Assessor Científico: Está tudo bem!
+a,4014,4042, *
+m2, 3111,3120, Ministro da Defesa: Ora, então por que você não descobre mais armas?
+m3, 3111,3120, Ministro da Defesa: Ora, então por que você não descobre mais tecnologia naval?
+t2, 3493,3509, Assessor Econômico: Ora, então por que você não descobre a Moeda?
+t4, 3493,3509, Assessor Econômico: Ora, então por que você não descobre o Comércio?
+end
+
+@S6
+1634,1766, Assessor Científico: Vamos tomar ou roubar tecnologias.
+m1,3111,3120, *
+m2,2912,2936, Ministro da Defesa: Concordo.
+m3,2912,2936, Ministro da Defesa: Concordo.
+m6,2912,2936, Ministro da Defesa: Concordo.
+m7,2912,2936, Ministro da Defesa: Concordo.
+end
+
+@S7
+1768,1839, Assessor Científico: Somos a número 1!
+a1, 4091,4130, Assessor de Atitude: Tenho motivo para preocupação, senhor.
+a6, 4014,4042, *
+t1, 3493,3509, *
+t6, 3307,3332, Assessor Econômico: Concordo.
+t7, 3307,3332, Assessor Econômico: E estamos ricos!
+f7, 3659,3680, Ministro do Exterior: Concordo.
+end
+
+
+@T1
+1841,1947, Assessor Econômico: Estamos em apuros... Eleve os impostos ou contrate agentes da Receita.
+a1, 2020,2062, Assessor de Atitude: Mas mantenha alta a taxa de luxos.
+#, end 
+a2, 2020,2062, Assessor de Atitude: Mas mantenha alta a taxa de luxos.
+#, end 
+a3, 2020,2062, Assessor de Atitude: Mas mantenha alta a taxa de luxos.
+#, end 
+s1, 1949,2018, Assessor Científico: Protesto: a taxa de ciência já é baixa demais.
+s2, 1949,2018, Assessor Científico: Protesto: a taxa de ciência já é baixa demais.
+end
+
+@T2
+2064,2204, Assessor Econômico: Descubra o Sistema Bancário.
+m2, 2767,2846, Ministro da Defesa: Calado! Precisamos é de melhor tecnologia bélica.
+m3, 2767,2846, Ministro da Defesa: Calado! Precisamos é de melhor tecnologia naval.
+end
+
+@T3
+2206,2340, Assessor Econômico: Crie Feiras ou Bancos.
+f5,3682,3706, Ministro do Exterior: Discordo.
+m1, 4612,4676, Ministro da Defesa: Não! Deveríamos criar um exército e pilhar.
+#, end 
+m4, 2767,2846, Ministro da Defesa: Calado! Precisamos é de Quartéis.
+#, end 
+m5, 2848,2910, Ministro da Defesa: Não! Precisamos é de Muralhas.
+s3, 3146,3172, Assessor Científico: Discordo.
+s4, 3146,3172, Assessor Científico: Discordo.
+a3, 3852,3885, Assessor de Atitude: Discordo.
+end
+
+@T4
+2342,2497, Assessor Econômico: Descubra o Comércio.
+f, 3659,3680, Ministro do Exterior: Concordo.
+#, m2, 2991,3014, Ministro da Defesa: Não lhes dê atenção!
+m3, 3111,3120, Ora, deveríamos era descobrir melhor tecnologia naval.
+end
+
+@T5
+2499,2597, Assessor Econômico: Crie Caravanas.
+m1, 4612,4676, Ministro da Defesa: Não, deveríamos criar um exército e pilhar.
+#, end 
+m4, 2767,2846, Ministro da Defesa: Calado! Precisamos é de Quartéis.
+#, end 
+m5, 2848,2910, Ministro da Defesa: Não! Precisamos de Muralhas.
+f5,3682,3706, Ministro do Exterior: Discordo.
+s3, 3146,3172, Assessor Científico: Discordo.
+a3, 3852,3885, Assessor de Atitude: Discordo.
+end
+
+@T6
+2599,2705, Assessor Econômico: Estamos bem, embora o senhor talvez queira elevar os impostos.
+a1,3962,4012, Assessor de Atitude: Epa! Precisamos de luxos, não de impostos. Senão, o governo cai...
+a2,3852,3885, Assessor de Atitude: Discordo.
+#, end 
+a3,3852,3885, Assessor de Atitude: Discordo.
+#, end 
+s1,1949,2018, Assessor Científico: Protesto: a taxa de ciência já é baixa demais.
+s2,1949,2018, Assessor Científico: Protesto: a taxa de ciência já é baixa demais.
+end
+
+@T7
+2707,2765, Assessor Econômico: Estamos ricos, senhor! Podres de ricos!
+m1,3111,3120, Ministro da Defesa: Ora, então nos compre unidades!
+#, end 
+m4,3111,3120, Ministro da Defesa: Ora, então nos compre Quartéis.
+#, end 
+m5,3111,3120, Ministro da Defesa: Ora, então nos compre Muralhas.
+#, end 
+f5, 3795,3816, Ministro do Exterior: Pateta! Então por que não nos compra embaixadas?
+#, end 
+a3,3962,4012, Assessor de Atitude: Compre-nos Templos, seu sonso.
+end
+
+
+@F1
+4132,4253, Ministro do Exterior: Vá explorar!
+r5, s, 3122,3144, Assessor Científico: Concordo.
+r5, m, 2912,2936, Ministro da Defesa: Concordo.
+r5, a, 3818,3850, Assessor de Atitude: Concordo.
+r5, t, 3307,3332, Assessor Econômico: Concordo.
+end
+
+@F2
+4255,4341, Ministro do Exterior: Façamos aliança com outra civilização.
+m6, 3052,3109, *
+m7, 3052,3109, *
+t, 3307,3332, Assessor Econômico: Concordo.
+s, 3122,3144, Assessor Científico: Concordo.
+end
+
+@F3
+4343,4440, Ministro do Exterior: Deveríamos descobrir a Espionagem.
+s, 3122,3144, Assessor Científico: Concordo.
+#, t2, 3362,3385, Assessor Econômico: Não lhes dê atenção!
+t4, 3334,3360, Assessor Econômico: Discordo.
+m2, 3111,3120, Ministro da Defesa: Bá! Exigimos são melhores armas.
+m3, 3111,3120, Ministro da Defesa: Bá! Exigimos são melhores navios.
+end
+
+@F4
+4442,4540, Ministro do Exterior: Deveríamos restabelecer nossa reputação com outras civilizações.
+m6, 4542,4610, Ministro da Defesa: Não! Deveríamos destruí-las!
+m7, 4542,4610, Ministro da Defesa: Não! Deveríamos destruí-las!
+end
+
+@F5
+4745,4868, Ministro do Exterior: Deveríamos criar embaixadas.
+t3, 4678,4743, Assessor Econômico: Discordo.
+t5, 4678,4743, Assessor Econômico: Discordo.
+t1, 4678,4743, Assessor Econômico: Discordo.
+m1, 3111,3120, Ministro da Defesa: Ora, precisamos é de unidades!
+m4,3111,3120, Ministro da Defesa: Ora, precisamos é de Quartéis!
+m5,2848,2910, Ministro da Defesa: Ora, precisamos é de Muralhas!
+s3, 3146,3172, Assessor Científico: Discordo.
+s4, 3146,3172, Assessor Científico: Discordo.
+a3, 3852,3885, Assessor de Atitude: Discordo.
+end
+
+@F6
+4870,4980, Ministro do Exterior: Deveríamos trocar tecnologia com outras civilizações.
+m2, 2938,2964, Ministro da Defesa: Concordo.
+#, s7, 3174,3201, Assessor Científico: Discordo... Não precisamos dessas tecnologias bestas.
+m3, 2938,2964, Ministro da Defesa: Concordo.
+#, s7, 3174,3201, Assessor Científico: Discordo... Não precisamos dessas tecnologias bestas.
+s7, 3146,3172, Assessor Científico: Discordo... Não precisamos dessas tecnologias bestas.
+#, end
+s5, s, 3122,3144, Assessor Científico: Concordo.
+t, 3307,3332, Assessor Econômico: Concordo. 
+end
+
+@F7
+4982,5072, Ministro do Exterior: Nossas relações exteriores estão ótimas.
+s7, 3122,3144, Assessor Científico: Concordo.
+a6, 4014,4042, *
+end
+
+
+@A1
+5074,5186, Assessor de Atitude: Arranje Templos e artistas, pois senão o governo cai!
+r5, t, 3307,3332, Assessor Econômico: Concordo.
+r5, s, 3122,3144, Assessor Científico: Concordo.
+r5, m, 2912,2936, Ministro da Defesa: Concordo.
+r5, f, 3659,3680, Ministro do Exterior: Concordo.
+end
+
+@A2
+5188,5302, Assessor de Atitude: Precisamos elevar depressa a taxa de luxos.
+t1, 5304,5374, Assessor Econômico: Deveríamos elevar eram os impostos!
+#, end
+t6, 5304,5374, Assessor Econômico: Deveríamos elevar eram os impostos!
+#, end 
+t, 3629,3657, Assessor Econômico: Como ousa caluniar a taxa de impostos?
+s1, 5647,5753, Assessor Científico: No momento, a taxa de ciência é baixa.
+#, end 
+s2, 5647,5753, Assessor Científico: No momento, a taxa de ciência é baixa.
+#, end 
+f3, 3682,3706, Ministro do Exterior: Discordo.
+m2, 2966,2989, Ministro da Defesa: Discordo.
+m3, 2966,2989, Ministro da Defesa: Discordo.
+end
+
+@A3
+5376,5474, Assessor de Atitude: As coisas vão mal... É preciso mais Templos e artistas.
+t1, 3493,3509, Assessor Econômico: Ora, precisamos é de mais impostos!
+t6, 3493,3509, Assessor Econômico: Ora, precisamos é de mais impostos!
+s1, 3203,3230, Assessor Científico: Posso falar, senhor?
+s2, 3203,3230, Assessor Científico: Posso falar, senhor?
+m1, 3111,3120, Ministro da Defesa: Ora, precisamos é de mais unidades!
+m4, 3111,3120, Ministro da Defesa: Ora, precisamos é de mais Quartéis.
+m5, 3111,3120, Ministro da Defesa: Ora, precisamos é de mais Muralhas.
+end
+
+@A4
+5476,5579, Assessor de Atitude: Deveríamos elevar a taxa de luxos.
+t1, 3493,3509, Assessor Econômico: Que nada! Agora precisamos de impostos, não de luxos.
+t, 3334,3360, Assessor Econômico: Discordo.
+s1, 5581,5645, Assessor Científico: Só não mexa na taxa de ciência.
+s2, 5581,5645, Assessor Científico: Só não mexa na taxa de ciência.
+s, 3146,3172, Assessor Científico: Discordo.
+end
+
+@A5
+5755,5820, Assessor de Atitude: O senhor está indo bem.
+f7, 3659,3680, Ministro do Exterior: Concordo.
+end
+
+@A6
+5822,5900, Assessor de Atitude: O povo festeja!
+t1, 3493,3509, Assessor Econômico: Discordo.
+t7, 3307,3332, Assessor Econômico: Concordo.
+s7, 3122,3144, Assessor Científico: Concordo.
+f7, 3659,3680, Ministro do Exterior: Concordo.
+end

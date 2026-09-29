@@ -1,0 +1,118 @@
+;
+;   CIVILIZATION MAIN MENU
+;   Copyright (c) 1995 by MicroProse Software
+;
+;   Altering the contents of this file may cause the
+;   game to malfunction.
+;
+
+@GAME
+&Jogo
+&Opções de Jogo|Ctrl+O
+O&pções Gráficas|Ctrl+P
+&Opções de Relatório Urbano|Ctrl+E
+Escolher &Música
+&Salvar Partida|Ctrl+S
+&Carregar Partida|Ctrl+L
+&Aposentar-se|Ctrl+R
+&Sair|Ctrl+Q
+
+@KINGDOM
+&Reino
+&Balanço de Impostos|Shift+T
+Exibir Sala do T&rono|Shift+H
+Localizar &Cidade|Shift+C
+&REVOLUÇÃO|Shift+R
+
+@VIEW
+&Exibir
+&Mover Peças|v
+&Exibir Peças|v
+Zoom &In|z
+Zoom &Out|x
+Zoom In Máximo|Ctrl+Z
+Zoom Padrão|Shift+Z
+Zoom Out Médio|Shift+X
+Zoom Out Máximo|Ctrl+X
+Exibir Grade do Mapa|Ctrl+G
+Dispor Janelas
+Exibir Terreno Oculto|t
+&Vista Central|c
+
+
+@ORDERS
+&Ordens
+&Criar Nova Cidade|b
+Criar &Estrada|r
+Criar &Irrigação|i
+Criar &Mineração|m
+Transformar em ...|o
+Criar &Base Aérea|e
+Criar &Fortaleza|f
+Automatizar Colonos|k
+Limpar &Poluição|p
+&Pilhagem|Shift+P
+&Descarregar|u
+&Ir Para|g
+&Salto|p
+Aero&transporte|l
+&Estabelecer &Cidade-Base|h
+&Fortificar|f
+&Descansar|s
+&Dissolver|Shift+D
+&Ativar Unidade|a
+&Esperar|w
+Dis&pensar Rodada|SPACE
+
+@ADVISORS
+&Assessores
+Consultar &Conselho Supremo|Ctrl+T
+&Status da Cidade|F1
+&Ministro da Defesa|F2
+&Ministro do Exterior|F3
+&Assessor de Atitude|F4
+&Assessor Econômico|F5
+&Assessor Científico|F6
+
+@WORLD
+&Mundo
+&Maravilhas do Mundo|F7
+&5 Maiores Cidades|F8
+&Pontuação da Civilização|F9
+&Demografia|F11
+&Espaçonaves|F12
+
+@CHEAT
+&Trapaça
+Botão Modo Trapaça|Ctrl+K
+Criar &Unidade|Shift+F1
+Revelar &Mapa|Shift+F2
+Estabelecer &Jogador Humano|Shift+F3
+Estabelecer Ano|Shift+F4
+&Suprimir Civilização|Shift+F5
+Avanço Tec&nológico|Shift+F6
+&Editar Tecnologias|Ctrl+Shift+F6
+Forçar &Governo|Shift+F7
+Mudar &Terreno no Cursor|Shift+F8
+Destruir &Todas as Unidades no Cursor|Ctrl+Shift+D
+Troca de Dinheiro|Shift+F9
+Editar Unidade|Ctrl+Shift+U
+Editar Cidade|Ctrl+Shift+C
+Editar Rei|Ctrl+Shift+K
+Parâmetros de Cenário|Ctrl+Shift+P
+Salvar Como Cenário|Ctrl+Shift+S
+
+
+@PEDIA
+&Civilopédia
+&Avanços da Civilização
+&Melhoramentos Urbanos
+&Maravilhas do Mundo
+&Unidades Militares
+&Governos
+&Tipos de Terreno
+&Conceitos de Jogo
+&Pesquisar na Civilopédia
+&Sobre Civilization II
+
+

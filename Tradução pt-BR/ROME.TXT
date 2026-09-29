@@ -1,0 +1,5 @@
+@SCENARIO
+@width=540
+@title=%STRING0
+^^Length: %STRING1 a %STRING2
+Nos 50 anos desde as conquistas de Alexandre Magno, o mundo civilizado tornou-se praticamente todo grego. A morte prematura de Alexandre, em 323 a.C., provocou uma série de guerras entre seus generais pelo controle de um império que se estendia da Itália meridional à Índia. Esse império acabou subdividindo-se em três reinos relativamente estáveis, governados pelos descendentes de generais de Alexandre: os selêucidas na Síria, os lágidas no Egito e os antigônidas na Macedônia. Eles coexistem com Cartago, a grande potência mercantil do norte e noroeste da África. As únicas ameaças sérias à paz são as periódicas invasões dos belicosos celtas da Europa central. Mas, recentemente, uma pequena república chamada Roma despontou como potência dominante na Península Itálica, após vários séculos de guerras regionais. Agora, o cenário está pronto para uma extraordinária série de sucessão de campanhas nas quais Roma conquistará os gregos ocidentais, Cartago, os celtas e, por fim, os três reinos gregos, tornando-se senhora do mundo ocidental.

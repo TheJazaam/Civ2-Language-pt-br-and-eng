@@ -1,0 +1,295 @@
+;
+;   CIVILIZATION AUTO ADVICE
+;   Copyright (c) 1995 by MicroProse Software
+;
+;   Altering the contents of this file may cause the
+;   game to malfunction.
+;
+
+@MILITARY
+@width=225
+@title=Assessor Militar
+@x=5
+@y=5
+
+@DOMESTIC
+@width=225
+@title=Assessor Interno
+@x=-5
+@y=5
+
+@SCIENCE0
+@width=250
+@title=Assessor Científico
+@x=-5
+Recomendo que desenvolvamos %STRING0.
+
+@SCIENCE1
+@width=250
+@title=Assessor Científico
+@x=-5
+Recomendo que desenvolvamos %STRING0 para criarmos:
+
+@SCIENCE2
+@width=250
+@title=Assessor Científico
+@x=-5
+Recomendo que desenvolvamos %STRING0 para um dia descobrirmos:
+
+
+
+@
+@@Temple
+O povo está infeliz. Deveríamos criar um %STRING0.
+
+@
+@@Colosseum
+O povo está ficando inquieto. Vamos acalmá-lo com um %STRING0.
+
+@
+@@Cathedral
+O povo está descontente. Talvez uma %STRING0 o distraia.
+
+@
+@@Barracks
+Nossos exércitos não podem ser eficientes sem treinamento adequado! Deveríamos criar um %STRING0 para produzir unidades terrestres veteranas e reparar unidades com rapidez.
+
+@
+@@Port Facility
+Deveríamos criar um %STRING0 para produzir unidades navais veteranas e reparar navios com rapidez.
+
+@
+@@Airport
+Deveríamos criar um %STRING0 para produzir unidades aéreas veteranas e reparar aeronaves com rapidez.
+
+@
+@@Granary
+Deveríamos criar um %STRING0 para estimular a cidade a crescer.
+
+@
+@@Supermarket
+Por que estamos deixando a comida apodrecer nos campos? Criemos um %STRING0 para distribuí-la direito!
+
+@
+@@Harbor
+O povo está ficando com fome. Criemos um %STRING0 para trazer alimentos do oceano.
+
+@
+@@MarketPlace
+Nosso povo é pobre. Criemos uma %STRING0 para atrair mercadores e comerciantes.
+
+@
+@@Bank
+Nossa economia estagnou. Deveríamos criar um %STRING0 para estimulá-la.
+
+@
+@@Stock Exchange
+Criemos uma %STRING0 e fiquemos todos ricos!
+
+@
+@@Superhighways
+Nosso antiquado sistema de transporte está atrasando a economia. Precisamos criar %STRING0 sem demora!
+
+@
+@@Library
+A sabedoria, e não a força, é nosso maior recurso. Para não desperdiçá-lo, criemos uma %STRING0.
+
+@
+@@University
+A longo prazo, a educação é a chave para a grandeza. Criemos uma %STRING0 agora mesmo.
+
+@
+@@Research Lab
+Deveríamos criar um %STRING0 para aumentar nossos conhecimentos.
+
+@
+@@Courthouse
+Não podemos tolerar a desordem e a vil corrupção! Sugiro que criemos um %STRING0 para impor nossos valores.
+
+@
+@@City Walls
+Esta cidade está praticamente indefesa! Deveríamos criar %STRING0 agora mesmo!
+
+@
+@@Coastal Fortress
+@@SAM Missile Battery
+Deveríamos criar uma %STRING0 para proteger nossa cidade.
+
+@
+@@Aqueduct
+O povo tem sede! Deveríamos criar um %STRING0 para permitir que nossa cidade cresça.
+
+@
+@@Sewer System
+As ruas estão cobertas de dejetos! Deveríamos criar %STRING0 para permitir que nossa cidade cresça.
+
+@
+@@Mass Transit
+@@Recycling Cntr.
+Precisamos de %STRING0 antes que sufoquemos com nossa própria fumaça!
+
+@
+@@Factory
+@@Manufacturing Plant
+@@Power Plant
+@@Hydro Plant
+@@Nuclear Plant
+@@Solar Plant
+Estamos perdendo em produtividade! Criemos bem depressa uma %STRING0.
+
+@
+@@Offshore Platform
+Precisamos explorar as riquezas do mar! Criemos uma %STRING0.
+
+@
+@@SDI Defense
+Por via das dúvidas, deveríamos criar uma %STRING0.
+
+@
+@@SS Structural
+@@SS Component
+@@SS Module
+Deveríamos criar um(a) %STRING0 para colonizar outros mundos.
+
+@
+@@Settlers
+Deveríamos criar %STRING0 para povoar este continente.
+
+@
+@@Engineers
+Precisamos de %STRING0 para desenvolver este continente.
+
+@
+@@Warriors
+@@Pikemen
+Nossas cidades são vulneráveis a ataques. Criemos %STRING0 para defendê-las.
+
+@
+@@Musketeers
+@@Riflemen
+Precisamos de mais %STRING0 para defender nossa nação.
+
+@
+@@Fanatics
+Precisamos recrutar %STRING0 para defender nossas crenças!
+
+@
+@@Phalanx
+@@Mech. Inf.
+Deveríamos criar uma unidade %STRING0 para defender nossas cidades.
+
+@
+@@Legion
+Deveríamos criar poderosas unidades %STRING0 para dominar o mundo!
+
+@
+@@Archers
+Deveríamos treinar nossos homens no uso do arco, pois Arqueiros são fortes na defesa e no ataque!
+
+@
+@@Alpine Troops
+Deveríamos criar uma %STRING0 para proteger nossas cidades e atacar nossos inimigos.
+
+@
+@@Chariot
+Partamos para o ataque! Sugiro que criemos uma %STRING0.
+
+@
+@@Catapult
+Com uma %STRING0, poderíamos penetrar os bastiões do inimigo.
+
+@
+@@Helicopter
+Deveríamos criar uma força aeromóvel com %STRING0s.
+
+@
+@@Cannon
+@@Howitzer
+Deveríamos criar uma unidade %STRING0 e reduzir nossos inimigos a pó!
+
+@
+@@Bomber
+@@Stlth Bmbr.
+Criemos uma unidade %STRING0 para mandar nossos inimigos de volta à Idade da Pedra!
+
+@
+@@Elephant
+Deveríamos criar uma unidade %STRING0 para pisotear nossos inimigos!
+
+@
+@@Crusaders
+Deveríamos criar %STRING0 para travar uma guerra santa!
+
+@
+@@Fighter
+@@Stlth Ftr.
+Precisamos de uma unidade %STRING0 para defender nossos céus!
+
+@
+@@Knights
+@@Dragoons
+@@Cavalry
+Deveríamos criar %STRING0 para punir nossos inimigos.
+
+@
+@@Marines
+@@Paratroopers
+Deveríamos criar %STRING0 e pegar nossos inimigos de surpresa.
+
+@
+@@Armor
+@@Artillery
+@@Partisans
+Criemos %STRING0 para dar uma lição a nossos inimigos!
+
+@
+@@Trireme
+@@Caravel
+@@Galleon
+@@Explorer
+Deveríamos criar %STRING0s para desbravar o mundo.
+
+@
+@@Horsemen
+Deveríamos criar %STRING0 para desbravar o mundo.
+
+@
+@@Frigate
+@@Ironclad
+@@Destroyer
+@@Cruiser
+@@Battleship
+@@Submarine
+@@AEGIS Cruiser
+Deveríamos criar %STRING0s para dominar os mares.
+
+@
+@@Carrier
+@@Transport
+@@Cruise Msl.
+@@Default
+Deveríamos criar uma unidade %STRING0.
+
+@
+@@Nuclear Msl.
+Talvez seja hora de um belo %STRING0.
+
+@
+@@Diplomat
+Deveríamos criar uma unidade %STRING0 para fazer contato com outras civilizações e roubar-lhes seus segredos.
+
+@
+@@Spy
+Deveríamos criar uma %STRING0 para dar golpes sujos em nossos inimigos.
+
+@
+@@Caravan
+@@Freight
+Deveríamos criar uma %STRING0 para estabelecer rotas comerciais até outras civilizações.
+
+@
+@@Wonder
+Para glória de nossa civilização, realizamos um grande projeto: %STRING0!
+
+@
+

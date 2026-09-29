@@ -1,0 +1,363 @@
+===========================================================
+
+                      CIVILIZATION II
+
+                    Update version 2.42
+
+                        9 October 1996
+
+===========================================================
+
+Version 2.42 changes
+====================
+
+* Fixed the Heralds animation problem with 32-bit video for
+  Windows.
+
+
+Version 2.41 changes
+====================
+
+* If an auto-settler encounters a situation that the AI 
+  can't make a decision about (strange routes, etc.), then 
+  the auto-settler will return to manual control mode. 
+  This should stop most instances of auto-settler problems.
+
+
+Version 2.4 changes
+===================
+
+* Changed version number to match labels on CD-ROM.
+
+* Fixed another situation with auto-settlers hanging the 
+  system.
+
+* Fixed crash on using help on SS MODULE.
+
+* Fixed problem with checking intelligence of an emissary 
+  and high-resolution windows display. (Previously, this 
+  would cause what looked like a lockup but was actually 
+  just the window getting "lost" under the first window.)
+
+* Fixed problem in which clicking on the help button while 
+  the UN Wonder is highlighted would bring up University 
+  help instead.
+
+* The Civilization II chart says that the "Cruise Missile" 
+  attack is 20, which is incorrect. The correct attack value
+  is 18.
+
+* Fixed crash while accessing Civilopedia help from the city 
+  status advisor's display.
+
+* Fixed failure to find @MERCENARY label in GAME.FRE (French 
+  version of GAME.TXT).
+
+File changes
+------------
+We are currently working on a scenario disk for Civilization 
+II which will be called Civilization II "Conflicts in 
+Civilization" Scenarios. The disc will include a new executable 
+with enhanced support for player-generated scenarios. If you 
+are currently working on a scenario, the following file changes
+will be supported:
+
+  RULES.TXT
+  CITIES.TXT
+  UNITS.GIF
+  CITIES.GIF
+  TERRAIN1.GIF
+  TERRAIN2.GIF
+
+Please do not make changes to other files. This can and will 
+lead to conflicts with future game versions.
+
+
+Version 1.11 changes
+====================
+
+French and German
+-----------------
+If the game is now playing in English only, make the following 
+correction to reset the game in your language.
+
+1. In Windows 95, double-click on the file CIV.INI in the
+   directory C:\WINDOWS\CIV.
+  
+2. Change the last line from "Language Preference 1" to 
+   "Language Preference 0."
+
+3. Save the file.
+
+4. Then restart Civilization II and you should see the "Select 
+   Language" menu.
+
+Customizing autobuild
+---------------------
+You may customize the domestic advisor's city improvement 
+picks for the autobuild if you wish. Create a file in your 
+Civilization II directory called CITYPREF.TXT. The first line 
+should be:
+
+  @AUTOBUILD
+
+Each succeeding line contains the name of a city improvement in
+the order you want to build them. You don't have to list every 
+city improvement, but each improvement must be spelled -exactly- 
+as it is in RULES.TXT. (For foreign language versions, use the 
+exact spelling from RULES.FRE or RULES.GER as appropriate.) 
+Your domestic advisor will then choose improvements from this 
+list provided that technology is available and the city is 
+otherwise eligible to build them. If nothing on list is available, 
+the advisor resorts to his normal algorithm.
+
+The military advisor will make his picks as usual. However, you 
+can order him never to build "defensive" type units by inserting 
+the line @NODEFEND at the beginning or end of the CITYPREF.TXT 
+file (don't put it between the @AUTOBUILD line and the list of 
+improvements).
+
+An example file is below:
+
+  @NODEFEND
+  @AUTOBUILD
+  Temple
+  Marketplace
+  Library
+
+The file is reread every time you click the "AUTO" button on the 
+"What shall we build?" menu. If you wish, you can alter your 
+priorities over the course of a game without reloading.
+
+* The Supply/Demand equation for commodities has been revised 
+  somewhat.
+
+* The AI for auto-settlers has been adjusted with less emphasis 
+  on railroads.
+
+* Caravan "go to" orders aren't cleared by zones of control.
+
+* A bug in Windows 95 which caused problems loading WinG if 
+  Windows 95 is installed on some other drive than C: has been 
+  worked around.
+
+
+Version 1.10 changes
+====================
+
+* Further fixes have been made to smart settlers (looping 
+  settlers caught in loop should ask for confirmation once the
+  loop is noticed).
+
+* You should always be able to contact rival kings (with whom 
+  you have treaties) at least once per turn, even if patience is 
+  exhausted. This is to give you a chance to demand he withdraw 
+  from your territory. Once he's "thrown you out" for the turn, 
+  though, you have to wait until the next turn.
+
+* Fixed problem with military advisor ("255 in production," etc.).
+
+* Air units cannot be fortified outside of cities.
+
+* Cities not spotted will not appear on Goto and Supply/Demand lists
+  (An exception is that foreign capitals will appear on Supply/Demand 
+  lists only).
+
+* Fixed problem scrolling between cities once more than 128 cities 
+  exist in the game.
+
+* Engineers no longer have "ignore ZOC" ability. This is to help 
+  prevent computer-controlled engineers from slipping into your 
+  territory and building cities within your borders.
+
+* The "mysterious teleporting paratrooper" problem has been resolved.
+
+* Fixed problem in foreign language versions where some heralds 
+  didn't show up.
+
+
+Version 1.09 changes
+====================
+
+* Smart settlers as of version 1.08 can loop infinitely if they are 
+  blocked by zones of control. That's fixed in this update.
+
+* Attitude advisor: cities with sufficient happiness to put them into
+  "We Love the King" day are shown in white.
+
+
+Version 1.08 changes
+====================
+
+* Version 1.08 adds a much requested feature: Smart (or at least 
+  Automated) Settlers. Issue the "K" or "Automate Settlers" order to 
+  your settlers or engineers, and they will behave (for better or for 
+  worse) exactly as if the AI were controlling them, although they 
+  will not build cities.  You can cancel the automate order the same 
+  way you cancel any order. Just click on the unit and/or selecting 
+  it on the unit popup.
+
+* For those who don't like the white grid around your city radius in 
+  Grid mode, we provide ICONSB.GIF, which is a version of ICONS.GIF
+  without the white grid sprite. If you'd prefer to run without the 
+  white grid, just copy ICONSB.GIF over ICONS.GIF.
+
+* If you prefer "Zoom to City" to be your default action on city
+  reports, you can now select this option by unchecking the "Zoom is
+  NOT default" option at the bottom of the City Report Options screen.
+
+* The foreign minister report (F3) now contains color-coding 
+  information about each king.
+
+* When caravan is used to add-to-wonder, a report on how many shields
+  are still required is given.
+
+* The maximum effective science rate for Fundamentalism (hardcoded to 
+  50% in previous patch) can now be user-configured in the RULES.TXT
+  file (bottom of Cosmic Principles) for those who wish to work around 
+  this.
+
+* Fixed some problems involving the autobuild.
+
+* A few earlier fixes that didn't make it into the foreign language
+  versions have been included in this patch.
+
+
+Vversion 1.07 changes
+=====================
+
+* Aegis cruisers will defend their stacks against missile and air 
+  attacks as they should. Before, the Aegis ability was often 
+  overlooked when determining which was the "best" defender for a 
+  stack.
+
+* As requested by many players, when the Grid (Ctrl-G) mode is 
+  active, the city radius of each of your cities will be shown in 
+  white. 
+
+* Population will no longer "loop around to zero."
+
+* Under Fundamentalism, any science rate above 50% will have no
+  additional effect on research. Below 50%, research still
+  continues at half effectiveness.
+
+* At some difficulty levels (for example, Prince), users were 
+  occasionally experiencing weird time-shifts (such as from A.D. 1 
+  back to 1920 B.C.). This problem should no longer occur.
+
+* Made some slight changes in ship logic to try to prevent wave 
+  after wave of suicide attacks against a city with a coastal 
+  fortress.
+
+* Counterespionage has been fixed (previously it was less 
+  effective than intended).
+
+* The AI will use slightly more discretion in approaching cities 
+  with attacking units.
+
+* Corrected problems associated with replacing the CD-ROM during 
+  the game.
+
+* The opportunity to poison water supply is not offered for cities 
+  of size 1.
+
+* Increased the defense strength of fighters, stealth fighters and
+  stealth bombers slightly.
+
+* Changed the attack strength of cruise missile to 18.
+
+* Corrected problem where new units were created with "NONE" as 
+  home after a large number of cities had been built.
+
+* Fixed problem with plundering negative amounts of gold.
+
+* Corrected problem where Windows 95 machines with 32-bit Indeo
+  (Video for Windows) drivers installed showed heralds "frozen 
+  in place."
+
+
+Version 1.06 changes
+====================
+
+* This version fixes the AI broken in version 1.04.
+
+
+Version 1.05 changes
+====================
+
+* The "Winning" animation is no longer displayed when another 
+  civilization wins the space race.
+
+* Double-clicking on unexplored territory no longer brings up 
+  the Civilopedia.
+
+* User-created units will no longer play the wrong sound in 
+  addition to the CUSTOMx.WAV sound.
+
+* When giving a unit to another civilization causes a technology 
+  leap, the technology given is no longer stuck on "Alphabet."
+
+* Cruisers now (properly) become obsolete with Rocketry.
+
+
+Version 1.04 changes
+====================
+
+* Corrected GPF that occurred for users who didn't have sound 
+  cards installed in their computers.
+
+* Corrected problem where users received a black box or black 
+  screen when going to the Civilopedia (or when a new advance was
+  discovered).
+
+* Month-by-month turns now work correctly for scenarios set in B.C.
+  (This is important for the Alexander the Great scenario.)
+
+* Wonders of the World movies are now shown only when you build
+  wonders (not when opponents build them). The Wonder movie cheat
+  has been improved, however, so you can view any Wonder movie
+  you want: hold down the Shift key while selecting "Wonders of 
+  the World" from the Civilopedia menu.
+
+* The "Accelerated Startup" algorithm has been enhanced to correct 
+  some problems (such as two cities in the same square on some 
+  preset maps) and improve some features.
+
+* Effects of Food Supplies trade routes are now displayed properly 
+  on the city information screen. (Formerly they worked properly 
+  but were not being displayed.)
+
+* Corrected some problems with user-defined techs (where it was not 
+  recognizing that user-defined techs had been discovered).
+
+* Language preference is now saved in the CIV.INI file. After you 
+  run the game once with this update, you will no longer be asked 
+  every time you play which language you want.
+
+* Corrected the "endless drumbeat" problem.
+
+* The Colossus now affects sea squares as well as land squares.
+
+* The "Auto" feature can no longer be used to circumvent the 50% 
+  penalty for production changes.
+
+* You will no longer be prompted to consult your high council if 
+  you have the feature switched off on the graphic options menu.
+
+* Advisors will no longer suggest you build a palace when you 
+  already have one.
+
+* The tutorial will automatically be switched off when beginning a 
+  scenario.
+
+* RULES.TXT now mentions that custom WAV files have to be 8-bit, 
+  mono and sampled at 22050hz.
+
+* Corrected some problems with "negative scores."
+
+* Miscellaneous minor fixes.
+
+
+
+
+

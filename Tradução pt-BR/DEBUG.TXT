@@ -1,0 +1,142 @@
+;
+; Debug/Cheat popups
+;
+
+@MOTD
+@width=480
+@title=Civilization II
+...
+
+@TOOMANYCITIES
+Cidades demais!
+
+@ENDOFTURN
+End of turn = %NUMBER0
+
+@DANGER
+@title=Perigo! Perigo!
+^Fact: %STRING0
+^Data: %NUMBER0 / %NUMBER1 / %NUMBER2
+
+@DANGERHEX
+@title=Perigo! Perigo!
+^Fact: %STRING0
+^Hex: %HEX0 / %HEX1 / %HEX2
+
+@GAVETECH
+Todas as tecnologias já foram dadas.
+
+@TOOKTECH
+Todas as tecnologias já foram tomadas.
+
+@GAVEALL
+Todos os melhoramentos já foram dados.
+
+@TOOKALL
+Todos os melhoramentos já foram tomados.
+
+@FREEBIE
+>Pouf!< Construção concluída.
+
+@MEMORY
+^System resources = %NUMBER0.
+
+@REVEALMAP
+@title=Selecionar Exibir Mapa
+
+@SETHUMAN
+@title=Selecionar Jogador Humano
+
+@KILLCIV
+@title=Excluir Civilização
+
+@PICKPLAYER
+@title=Escolher Jogador
+
+@MONEY
+@title=Mudar Tesouro %STRING0
+@width=300
+%STRING0 treasury currently {%NUMBER0$}.
+
+New treasury:
+
+@TERRAIN
+@title=Selecionar Características de Terreno
+@width=420
+@checkbox
+@button=Terreno
+@options
+Irrigação
+Mineração (Irr & Min = Fazenda)
+Estrada
+Ferrovia
+Fortaleza
+Base Aérea
+Poluição
+
+@TERRAIN1
+@title=Selecionar Tipo de Terreno
+@width=300
+
+@GAMEYEAR
+@title=Mudar Número de Rodadas Decorridas
+@width=300
+# Turns Elapsed: %NUMBER0.
+
+New # Turns:
+
+@CREATEUNIT
+@title=Selecionar Unidade a Criar
+@width=480
+@listbox
+@button=Estrangeira
+@button=Veterana
+@button=Obs.
+@button=Adv.
+
+@MOVEDEBUG
+@title=Mover Debug
+@x=0
+@y=0
+@width=200
+@options
+Fechar
+Zoom out
+Zoom in
+Centrar no começo
+Centrar na parada
+
+
+@GOODYX
+@title=Valor X
+@width=300
+@options
+X:
+
+@GOODYY
+@title=Valor Y
+@width=300
+@options
+Y:
+
+@GOODYMAP
+@title=Valor Mapa
+@width=300
+@options
+Map:
+
+@GOODYDIV
+@title=Valor Div
+@width=300
+@options
+Div:
+
+@NETLIST
+@title=Lista de Jogadores em Rede
+@width=320
+
+
+
+
+@end
+

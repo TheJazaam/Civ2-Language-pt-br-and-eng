@@ -1,0 +1,542 @@
+==================================================================
+                          Civilization II
+                     Frequently Asked Questions
+                           9 October 1996
+==================================================================
+
+  This FAQ is now divided into 5 major sections to make it
+  easier for you to find information:
+   
+  Section 1: Startup/General Troubleshooting
+  Section 2: Video
+  Section 3: Sound
+  Section 4: Error Messages
+  Section 5: Gameplay
+
+  Original text by Brian Reynolds with additions by Calvin Rien
+=================================================================
+   
+Section 1: Startup/General Troubleshooting
+------------------------------------------
+
+Q: Where can I get the latest patch for Civilization II?
+   
+A: The latest patch is now available for download. If you're 
+   having problems and you haven't downloaded the latest patch
+   yet, DO IT! The patch can be found on our FTP site 
+   (ftp.microprose.com under "new versions"), our Web site 
+   (www.microprose.com), CompuServe, America Online or our 
+   BBS (510-522-8909).
+   
+Q: How do I tell which version of Civilization II I am playing?
+   
+A: Go to the Game Options menu (Ctrl-O); the window title says 
+   which version you are playing.
+   
+Q: How do I install the patch for Civilization II?
+   
+A: If the file name ends in .ZIP, then you will need the shareware 
+   utility called Pkunzip or Winzip. This can be found easily on 
+   most online services (or at www.pkware.com). You then use 
+   Pkunzip or Winzip to extract the files from the archive. The 
+   extracted files should then be copied to the CIV2 directory on 
+   your hard drive. When you are asked if you want to replace 
+   existing, say "yes to all."
+   
+   If the file ends in .EXE (CIV242.EXE), copy the file to the 
+   CIV2 directory and run it. It will automatically extract and 
+   ask you if you wish to replace existing. Again say "yes 
+   to all."
+   
+Q: What are the system requirements for the game?
+   
+A: The minimum requirements are a 33MHz 80486 compatible, Windows
+   3.1, 8MB RAM, Super VGA graphics, a double-speed CD-ROM drive, 
+   MSCDEX version 2.2 and a Microsoft-compatible mouse. With the
+   minimum system requirements, though, you may not be able to get
+   full performance out of the Video for Windows portions of the 
+   the game. (Check the Video for Windows Readme file on the 
+   Civilization II CD-ROM for more information.)
+   
+   The recommended minimum system is at least a 66MHz Intel-based
+   80486. Obviously the faster the system and the higher the display 
+   resolution, the better the gameplay. The reason we recommend an 
+   Intel processor is that some users have had problems with Video
+   for Windows on non-Intel processors (such as NexGen, Cyrix and
+   AMD).
+   
+Q: Does Civilization II work with Windows NT, OS/2 or 
+   SoftWindows?
+   
+A: Although some users have had some success running Civilization 
+   II under these operating systems, we did not test the game under 
+   these conditions. We, therefore, cannot recommend or support such 
+   installations.
+   
+Q: What programs could cause problems with Civilization II?
+   
+A: We recommend not running anything in the background when 
+   playing Civilization II. Programs that we especially recommend
+   avoiding are:
+   
+   Virus scan programs that stay resident in memory (Norton
+     AntiVirus, McAfee, VShield)
+   Third-party font managers (Adobe Type Manager)
+   RAM Expanders (RAM Doubler, SoftRAM, MagnaRam)
+   CD-ROM acceleration software (D-Time, FlexiCD)
+   Third-party shell programs (PC Tools, Norton Desktop, Packard 
+     Bell Navigator)
+   Hard drive compression (DriveSpace, DoubleSpace, Stacker, etc.)
+   Uninstallers (CleanSweep, RemoveIt)
+   
+Q1: I am getting a GPF @ 0041:_____ when starting CIV2.EXE.
+   
+Q2: I am getting a GPF @ 0044:_____ when starting CIV2MAP.EXE.
+   
+A: This problem usually means that WinG installation was somehow 
+   skipped when you installed the game (it is supposed to be 
+   installed automatically). To install WinG manually, run
+   WINGSET.EXE in the WING directory on the CD-ROM. You'll also
+   want to install Video for Windows manually by running
+   VFWSETUP.EXE from the VFW_INST directory.
+   
+   Occasionally this problem persists. So far we've encountered 
+   this on Windows 95 systems with Windows installed on some drive
+   other than drive C. Windows 95 seems to have a hard time loading
+   WinG in this case.
+   
+Q: I am getting a GPF @ 0042:____.
+   
+A: The initially shipped version of Civilization II requires a
+   sound card in order to run properly. If you don't have a sound
+   card or if it isn't active in Windows, you'll need to download
+   the patched version of Civilization II.
+   
+Q: I am getting a lot of GPFs in the game.
+   
+A: Make sure you have the latest drivers for your video card and 
+   sound card. Otherwise, check section 4 for more information.
+   
+   We are aware of problems with certain models of Cirrus Logic 
+   and Diamond brand video cards. In most cases, these problems 
+   can be solved by updating the Windows video drivers. If
+   you have a Cirrus Logic card, new drivers can be found at 
+   ftp.cirrus.com. If you are using any other brand of video
+   card, we recommend checking your drivers to make sure they are
+   up-to-date. If you are using older versions of video drivers,
+   they can cause problems. Generally speaking, most GPFs can be
+   solved by updating all your Windows drivers for video, sound,
+   etc.
+   
+Q1: I accidentally selected French when I first set up the game;
+   how do I get back to English?
+   
+Q2: I would like to see what the German version is like, but I
+   don't seem to have the option to play in German.
+   
+A: If you are playing Civilization II version 1.01 or later, you
+   will find a file called CIV.INI in the Windows directory. You
+   can open this file using either the DOS editor or Windows' Notepad.
+   CIV.INI has a "Language Preference" line: 3=German, 2=French,
+   1=English, 0=Ask Me Again.
+   
+Q: The text in the game is unreadable, or I receive a TrueType 
+   font error.
+   
+A: Make sure that TrueType fonts are enabled on the Control Panel. 
+   Also, Adobe Type Manager has a known incompatibility with the 
+   Authorware tool we used for the hypertext Civilopedia. You'll 
+   need to disable ATM (and other third-party font managers) and tell 
+   it to use resident fonts.
+   
+   If you've tried all of this and you're still getting text in 
+   "Greek," we've had some success by actually uninstalling the 
+   Symbol TrueType font (under Control Panel, Fonts) and then 
+   removing the font file (SYMBOLE.FON) from the WINDOWS\SYSTEM 
+   directory. This is a somewhat crude and last-ditch solution.
+   
+Q: I am getting GPFs whenever I discover a new technology, or 
+   bring up the Civilopedia.
+   
+A: Try renaming or deleting the file GET_INFO.EXE from your CIV2
+   directory. You won't get the fancy Civilopedia, but you will get 
+   the beta version of the Civilopedia. In this case, the problem is
+   some conflict with the Authorware package we used to do the
+   hypertext version of Civilopedia.
+   
+Q: The game tells me to run "VFWFIX.BAT" on the CD-ROM, but I cannot 
+   find the file.
+   
+A: Actually, the file is "VFWFIX.REG" and you can still run the 
+   file. If you double-click on the file in the File Manager 
+   (Windows 3.1) or "My Computer" (Windows 95), the information in
+   the file will be added to the Windows registry and the problem
+   should be fixed. Sorry for the confusion.
+   
+   If double-clicking on the VFWFIX.REG doesn't work, you will need 
+   to run REGEDIT. This is usually found in the Windows directory, 
+   or you can access it through the "Run" dialog. You will then 
+   want to go to the Registry menu in Windows 95 or the File menu 
+   in Windows 3.1. Choose Import Registry or Merge Registry, and
+   then select VFWFIX.REG from the CIV2\VIDEO directory on the 
+   Civilization II CD-ROM.
+   
+Q1: I get a window titled "(Inactive C:\mps\civ2\civ2.exe)."
+   
+Q2: I am receiving the message "Error -8 in Module 4, data 0 0" and
+   "File open failed MODULES.DB"
+   
+A: When CIV2.EXE is run, its working directory must be set to your 
+   CIV2 directory (usually C:\MPS\CIV2). Check the properties on 
+   your Civilization II icon to make sure its working directory is
+   set correctly. If you've been trying to start Civilization II
+   in some other way (such as via File Manager or Explorer), try 
+   starting it by double-clicking the designated icon/shortcut.
+   
+   These messages basically mean that Civilization II cannot find a
+   file necessary to start the game. Another step to take is make
+   sure you have more than enough hard drive space, and then delete
+   and reinstall the game.
+   
+Q: I'm not sure what is causing my lockups or crashes.
+   
+A: Try the following steps:
+   
+   1) Try starting the map editor. If it crashes, the problem is 
+      with WinG.
+   
+   2) Try starting Civilization II without the CD-ROM in the drive.
+      If the game doesn't crash, the problem is with Video for
+      Windows.
+   
+   3) Try selecting something from the Civilopedia. If this
+      crashes, the problem is with the Civilopedia (see above).
+   
+   4) Try selecting the High Council, If you get black windows,
+      the problem is with Video for Windows.
+   
+   5) Try turning off sound effects or music in the game options 
+      window (Ctrl-O). If the game stops locking up or crashing, 
+      the problem is with the sound card drivers.
+   
+Section 2: Video
+----------------
+   
+Q: I am having problems running the videos in the game 
+   (particularly if they always show up as black squares).
+   
+A: Try reinstalling the "Video for Windows" program (VFWSETUP.EXE 
+   found in the Vfw_Inst folder on the Civilization II CD-ROM).
+   When reinstalling, make sure that you agree to all the licensing 
+   questions and restart Windows so that the changes take effect.
+   
+Q: The heralds appear but they aren't animating (Windows 95
+   machines only).
+   
+A: You are probably using the 32-bit Indeo driver. You can
+   check this by looking for a file called IR41_32.DLL in your 
+   C:\WINDOWS\SYSTEM directory. If the file is there, you can 
+   either uninstall the 32-bit version and install the Video for 
+   Windows on the Civilization II CD-ROM or you can wait for a 
+   patch which we hope will be ready soon.
+   
+Q: I get strange shifting colors when the videoes for the Wonders
+   of the World or the High Council are played.
+   
+A: Switch your video display to 256-color mode.
+   
+Q: The Civilopedia causes a black screen.
+   
+A: This will happen if you have Windows 95, did not install the 
+   Civilopedia files to the hard drive and are playing with the
+   CD-ROM. You'll simply need to download the latest patched
+   version.
+   
+Q: I have an STB Lightspeed 128 video card and whenever I try to
+   access "Advances" from the Civilopedia menu, my monitor goes
+   black or I get a fatal exception error.
+
+A: This problem is caused by the 16-bit driver for QuickTime. 
+   (The 32-bit QuickTime player works fine.) You will need to edit 
+   the QTW.INI files in your \WINDOWS directory using Notepad. 
+   Change "Optimize=Driver" to "Optimize=BMP" in the QTW.INI file. 
+   Then right-click on the QTW.INI file and select "Properties" 
+   from the popup menu. In the Attributes section, click to put a 
+   checkmark in the "Read-only" box.
+
+Section 3: Sound
+----------------
+   
+Q1: I can't hear music, even though the CD-ROM is in the drive. 
+
+Q2: When I select "Pick Music," it tells me this option is not 
+   available unless the CD-ROM is in the drive, but the CD-ROM is
+   in the drive.
+   
+A: The music in the game is standard Redbook CD audio. This means 
+   that you can put the Civilization II CD-ROM into any CD player
+   and the music should play just like any regular music CD (except
+   for track 1). In order to hear the CD audio music, you must have
+   the following:
+   
+   1) The Civilization II CD-ROM in the CD-ROM drive.
+   
+   2) The proper (and up-to-date) Windows MCI CD audio drivers for 
+      your sound card loaded.
+   
+   3) A CD audio cable connecting your CD drive to your sound card. 
+      This last is part of the standard system configuration and is 
+      probably present unless you installed your sound card or
+      CD-ROM drive yourself.
+   
+   If these conditions are satisfied, the music will play. If you 
+   do not have the latest sound card drivers, you should contact
+   your sound card manufacturer for an update. Also, there have been 
+   reports of other CD programs (such as Microsoft FlexiCD) causing
+   a conflict with the game. In this case, disabling these other 
+   programs should fix the problem.
+   
+   If you're having problems with the music, you may want to check
+   if you can play a regular audio CD on your CD-ROM drive. Open up 
+   the Media Player (found in the Accessories program group), make
+   sure CD Audio is in the device list, select it and press "Play."
+   If music plays in the Media Player, you should be able to hear
+   music in Civilization II.
+   
+Q: The game can't find the CD-ROM after I have been playing for a 
+   while.
+   
+A: If you open the CD-ROM drive during the course of gameplay, the 
+   game will stop recognizing the presence of the CD-ROM. For now,
+   the only fix is to not to open the CD-ROM drive while you are
+   playing.
+   
+Section 4: Error Messages
+-------------------------
+   
+Q: I am getting "SMEDS Application Errors" or "PORTALLOCFAILED" 
+   messages.
+   
+A: The most likely problem is a lack of global memory space. Even 
+   when you have the required amount of physical memory, it is 
+   possible for other applications or disk cache programs to 
+   drain these resources.
+   
+   a) Usually the best solution is to increase the amount of 
+      virtual memory swap space you have available. If you are 
+      running Windows 3.1, go to Control Panel, 386 Enhanced,
+      Virtual Memory and increase your swap memory to 32MB or
+      more. Of course, you'll need to make sure you have enough
+      disk space to accommodate the swap file. (The minimum you
+      should set it for is 10MB or about 11000K.)
+   
+   b) If you're running Windows 95, it will usually manage your 
+      virtual memory for you correctly. However, you must have 
+      enough disk space available for Windows 95 to create and
+      use a swap file (at least 15MB free on the hard drive).
+   
+   c) The above will usually eliminate the GPFs, but you may also 
+      be able to improve performance by freeing up physical memory, 
+      particularly by reducing the size of your disk cache if you 
+      have a large one.
+   
+Q: I am getting a "Page Fault" error.
+   
+A: Try the above steps for SMEDS Errors. Also make sure that you 
+   have the latest driver for your video card.
+   
+Q: I received a "Can't find WinG" error message.
+   
+A: Some computer systems have their Windows System directory 
+   write-protected. To fix this problem, you need to change this
+   attribute and reinstall both WinG and Video for Windows.
+   
+   Also on some systems, the WinG files fail to decompress when
+   they are copied to the system folder. Check the following chart 
+   against what is in your Windows\System folder:
+   
+   FILE NAME      COMPRESSED     EXPANDED
+   --------------------------------------
+   WING32.DLL            7k          13k
+   WINGDE.DLL           86k         185k
+   WING.DLL             47k          91k
+   WINGDIB.DRV           6k           7k
+   WINGPAL.WND           4k           5k
+   
+   If one, or all, of these files is still compressed, then 
+   something is preventing the WinG installation from completing 
+   properly.
+   
+Q: I received a "Cannot find MSVideo.dll" or "Cannot find 
+   AVIFile.dll" error message.
+   
+A: This appears to happen when the Video for Windows installation 
+   is skipped. Rerun the VFWSETUP.EXE from the VFW_Inst folder on 
+   the Civilization II CD-ROM.
+   
+Q: I'm getting an "Undefined Dynalink" error message.
+   
+A: This is an error message caused by having two Dynamic Link 
+   Library files (DLLs) of the same name on your system. It 
+   usually has to do with the Video for Windows drivers. Try 
+   rerunning VFWSetup from the VFW_Inst folder on the Civilization
+   II CD-ROM. If this fails, try starting the game without the
+   Civilization II CD-ROM in the drive. This should get you around
+   the problem. To fix it, however, you will have to find which
+   two *.DLL files installed on your system are trying to do the
+   same function.
+   
+Q: I am getting a GPF in WING.DLL.
+   
+A: This probably means you are using some kind of "RAM doubling" 
+   software (such as RAM Doubler, SoftRAM) which seems to cause a 
+   conflict.
+   
+Q1: I am getting an "Incorrect Windows Version" error when trying 
+   to launch Civilization II.
+   
+Q2: I am getting a "Not enough memory" error when trying to launch 
+   Civilization II, even though I have enough RAM and enough virtual
+   memory. (See SMEDS above for virtual memory info.)
+   
+A: We have encountered rare cases in which the Windows 
+   configuration itself is at fault; somehow Windows has been 
+   corrupted since it was installed, possibly by some other 
+   application or by a faulty "uninstall" procedure for another 
+   application. Several users with mysterious problems have cured 
+   them by reinstalling Windows. Obviously, this is a last resort.
+   If you decide to reinstall Windows, you must then reinstall 
+   Civilization II completely, including WinG and Video for Windows.
+   
+Section 5: Gameplay
+-------------------
+   
+Q: Why can't I find the portrait option in the game?
+   
+A: Unfortunately, this feature was planned, but not implemented, in 
+   the game. It was, however, left in the documentation.
+   
+Q: It states on page 93 of the manual that, with the railroad and 
+   supermarket advance, appropriate terrain will be automatically 
+   upgraded. Why isn't this happening?
+   
+A: The terrain in the city square will be automatically upgraded.
+   This is true and is implemented. Some players have read this and 
+   thought that all squares around the city are improved, but this 
+   was not the intent.
+
+Q: My file listing is filling up quickly with saved games. How do 
+   I get rid of them?
+   
+A: Civilization II's saved game files are files that contain the 
+   first two letters of your ruler's name and the year. Their file 
+   extension is .SAV.
+   
+   With Windows 3.1, use the file manager to search for *.SAV. You
+   can then select and delete the files as you wish.
+   
+   With Windows 95, you can use the Find command from the Start menu
+   to search for *.SAV. Then select and drag the unwanted files to 
+   the Recycle Bin. Remember: you must empty the Recycle Bin to 
+   reclaim the hard drive space.
+   
+Q: I have selected the Capitalization advance in 10 of my cities 
+   and none of them seem to build anything.
+   
+A: If you've built Capitalization in 10 cities, you must be very 
+   rich by now. Capitalization is a nonstandard improvement; it 
+   turns the shield production of a city into tax income. It is 
+   generally used in cities that are well-defended and that don't
+   need other improvements at the moment. Use the money to bribe,
+   buy and influence.
+   
+Q: Sometimes, when I try to move a unit one direction (even one 
+   square), it moves the opposite way. It then goes around the 
+   world to get to the point I selected!
+   
+A: What is happening is the unit is trying to cross the 0 degrees
+   longitude line. Since the game's Goto function doesn't know that
+   the shortest route would be to cross this line, it avoids this
+   line at all costs.
+   
+   What we recommend is, early in the game, click with the right 
+   mouse button. This changes you to the flashing diamond cursor. 
+   On the right-hand side of the screen, it will display 
+   coordinates. When the first number reaches 0, you have found
+   the line. Find or place a visual landmark (a fort or boat). 
+   Remember not to use the Goto function to cross from one side of 
+   this landmark to the other. Instead approach the line with 
+   Goto and use manual moves to cross it.
+   
+Q: I placed a city in a really dumb place. How do I get rid of it?
+   
+A1: If you are playing in Chieftain level, there isn't much you 
+   can do. Just leave it at size 1 (don't allow it to produce much 
+   food) and let an enemy destroy it.
+   
+A2: If you are playing Warlord or higher, you can do the above or 
+   you can get the city down to size 1 (again by starving the 
+   citizens) and build, or buy, a settler.
+   
+Q1: I've gotten the necessary advances, but I can't build 
+   Granaries.
+   
+Q2: I've gotten the necessary advances, but I can't build Police 
+   Stations.
+   
+A: These are two city improvements that are directly linked to 
+   certain Wonders of the World. Pyramids count as a Granary in 
+   all friendly cities; Women's Suffrage counts as a Police Station 
+   in all cities.
+   
+Q: I've gotten the necessary advances, but I can't build Nuclear 
+   Plants.
+   
+A: This answer is similar to the above. The Hoover Dam Wonder 
+   makes Nuclear Plants obsolete. Also, if you haven't built a 
+   Factory in the city, you can't build Electric or Nuclear Plants. 
+   Also, if you have built a Solar Plant, this makes Electric and 
+   Nuclear Plants obsolete.
+   
+Q: I've gotten the Apollo Program Wonder, but I can't build Space 
+   Ship Parts.
+   
+A: If you got the Apollo Wonder without using the cheat menu, you 
+   should be able to build SS Structural right away. To build SS 
+   Components and SS Modules, you need a few more advances.
+   
+   Note that for technical reasons no one is allowed to build 
+   spaceship parts in the B.C. part of the game. If you want to 
+   cheat and build spaceships right away, you need to set the date 
+   to at least A.D. 1.
+
+Q1: I downloaded the Civilization II demo. When I try to run it, 
+   though, it says "Cannot find SMEDSNET.DLL."
+   
+Q2: I downloaded the Civilization II patch. When I try to run it, 
+   though, it says "Cannot find SMEDSNET.DLL."
+   
+A: The file you have is not a demo or an update program. It is a 
+   replacement executable file for Civilization II. What you need
+   to do is copy this file, along with the other files that came
+   with it, to the CIV2 directory that is on your hard drive. If
+   Civilization II isn't on the hard drive yet, you need to install
+   it before you can copy over the patch.
+   
+Q: I'm having trouble with my user-defined techs and units.
+   
+A: User-defined techs are pretty easy. Just edit the RULES.TXT 
+   file (or RULES.GER or RULES.FRE) and change both "no" entries 
+   for the user-defined tech to either "nil" or any valid advance 
+   abbreviation. Also remember that no matter what you name the 
+   tech, the abbreviation will always be U1, U2 or U3.
+   
+   The extra units are basically the same, but you will want to 
+   experiment with different attack and defense ratings. Also 
+   certain things will cause the game to act weirdly, like an air 
+   unit that can carry air units doesn't work. Remember: if you 
+   want these units attached to your user-defined techs, you must 
+   use the U1, U2 or U3 abbreviations.
+   
+   You can only create three extra techs and units.
+   

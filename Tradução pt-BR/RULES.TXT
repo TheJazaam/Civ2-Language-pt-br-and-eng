@@ -1,0 +1,607 @@
+;
+;   CIVILIZATION GAME DATA
+;   Copyright (c) 1995 by MicroProse Software
+;
+;   This file can be altered at your own risk to change
+;   the rules of the game.  Keep in mind that altering the
+;   contents of this file may cause your game to malfunction,
+;   particularly if you use values outside the specified
+;   ranges.
+;
+
+;
+;   Cosmic Principles
+;
+;   The following numbers control various key rules
+;   of the game.  GREAT discretion is advised if you
+;   opt to change these.  Values too far out of the
+;   expected range can cause the game to behave strangely.
+;
+@COSMIC
+3       ; Road movement multiplier
+2       ; 1 in x chance Trireme lost (mod. by Seafaring, Navigation)
+2       ; # of food each citizen eats per turn
+10      ; # of rows in food box (rows * city_size+1 = box)
+10      ; # of rows in shield box
+1       ; Settlers eat (govt <= Monarchy)
+2       ; Settlers eat (govt >= Communism)
+7       ; City size for first unhappiness at Chieftain level
+14      ; Riot factor based on # cities (higher factor lessens the effect)
+8       ; Aqueduct needed to exceed this size
+12      ; Sewer System needed to exceed this size
+10      ; Tech paradigm (higher # slows research)
+20      ; Base time for engineers to transform terrain (x2)
+3       ; Monarchy  pays support for all units past this
+3       ; Communism pays support for all units past this
+10      ; Fundamentalism pays support for all units past this
+0       ; Communism is equivalent of this palace distance.
+50      ; Fundamentalism loses this % of science
+50      ; Percent shield penalty for production type change
+10      ; Max paradrop range
+75      ; Mass/Thrust paradigm (increasing slows spaceship time)
+5       ; Max effective science rate in fundamentalism (x10, so 5 = 50%)
+
+;
+;   Civilization Advances
+;
+;   Ai Value, Civilized Modifier, Preq1, Preq2, Epoch, Category
+;
+;     Ai Value = Basic value at which computer players
+;                view this advance (used in determining
+;                which discovery to pursue, which to
+;                acquire during exchanges, and value of
+;                gift during diplomacy).
+;     Modifier = Modifier to value based on the "civilized"
+;                aspect of a leader's personality.  Positive
+;                values increase value for civilized leaders,
+;                decrease it for militaristic.  Negative
+;                values vice versa.
+;     preq1, preq2 = Prerequisites
+;
+;     Epoch = historical period
+;             0 = Ancient
+;             1 = Renaissance
+;             2 = Industrial Revolution
+;             3 = Modern
+;
+;     Category = Categoria de conhecimento
+;             0 = Military
+;             1 = Economic
+;             2 = Social
+;             3 = Academic
+;             4 = Applied
+;
+@CIVILIZE
+Voo Avançado,       4,-2,  Rad, Too, 3, 4    ; AFl
+Alfabeto,           5, 1,  nil, nil, 0, 3    ; Alp
+Guerra Anfíbia,     3,-2,  Nav, Tac, 3, 0    ; Amp
+Astronomia,         4, 1,  Mys, Mat, 1, 3    ; Ast
+Teoria Atômica,     4,-1,  ToG, Phy, 2, 3    ; Ato
+Automóvel,          6,-1,  Cmb, Stl, 3, 4    ; Aut
+Sistema Bancário,   4, 1,  Tra, Rep, 1, 1    ; Ban
+Pontes,             4, 0,  Iro, Cst, 0, 4    ; Bri
+Bronze,             6,-1,  nil, nil, 0, 4    ; Bro
+Sepultamento,       5, 0,  nil, nil, 0, 2    ; Cer
+Química,            5,-1,  Uni, Med, 1, 3    ; Che
+Fidalguia,          4,-2,  Feu, Hor, 1, 0    ; Chi
+Código Legal,       4, 1,  Alp, nil, 0, 2    ; CoL
+Armas Combinadas,   5,-1,  Mob, AFl, 3, 0    ; CA
+Combustão,          5,-1,  Ref, Exp, 2, 4    ; Cmb
+Comunismo,          5, 0,  Phi, Ind, 2, 2    ; Cmn
+Computadores,       4, 1,  Min, MP,  3, 4    ; Cmp
+Conscrição,         7,-1,  Dem, Met, 2, 0    ; Csc
+Construção,         4, 0,  Mas, Cur, 0, 4    ; Cst
+Corporação,        4, 0,  Ind, Eco, 2, 1    ; Cor
+Moeda,              4, 1,  Bro, nil, 0, 1    ; Cur
+Democracia,         5, 1,  Ban, Inv, 2, 2    ; Dem
+Economia,           4, 1,  Uni, Ban, 2, 1    ; Eco
+Eletricidade,       4, 0,  Met, Mag, 2, 4    ; E1
+Eletrônica,         4, 1,  E1,  Cor, 3, 4    ; E2
+Engenharia,         4, 0,  Whe, Cst, 0, 4    ; Eng
+Ambientalismo,      3, 1,  Rec, SFl, 3, 2    ; Env
+Espionagem,         2,-1,  Cmn, Dem, 3, 0    ; Esp
+Explosivos,         5, 0,  Gun, Che, 2, 4    ; Exp
+Feudalismo,         4,-1,  War, Mon, 0, 0    ; Feu
+Voo,                4,-1,  Cmb, ToG, 2, 4    ; Fli
+Fundamentalismo,    3,-2,  MT,  Csc, 2, 2    ; Fun
+Fusão Nuclear,      3, 0,  NP,  Sup, 3, 3    ; FP
+Engenharia Genética,3, 2,  Med, Cor, 3, 3    ; Gen
+Guerrilha,          4, 1,  Cmn, Tac, 3, 0    ; Gue
+Pólvora,            8,-2,  Inv, Iro, 1, 0    ; Gun
+Montaria,           4,-1,  nil, nil, 0, 0    ; Hor
+Industrialização,   6, 0,  RR,  Ban, 2, 1    ; Ind
+Invenção,           6, 0,  Eng, Lit, 1, 4    ; Inv
+Ferro,              5,-1,  Bro, War, 0, 4    ; Iro
+Sindicato,          4,-1,  MP,  Gue, 3, 2    ; Lab
+Laser,              4, 0,  NP,  MP,  3, 3    ; Las
+Liderança,          5,-1,  Chi, Gun, 1, 0    ; Ldr
+Alfabetização,      5, 2,  Wri, CoL, 0, 3    ; Lit
+Máquina-Ferramenta, 4,-2,  Stl, Tac, 2, 4    ; Too
+Magnetismo,         4,-1,  Phy, Iro, 1, 3    ; Mag
+Cartografia,        6,-1,  Alp, nil, 0, 1    ; Map
+Alvenaria,          4, 1,  nil, nil, 0, 4    ; Mas
+Produção em Massa,  5, 0,  Aut, Cor, 3, 4    ; MP
+Matemática,         4,-1,  Alp, Mas, 0, 3    ; Mat
+Medicina,           4, 0,  Phi, Tra, 1, 1    ; Med
+Metalurgia,         6,-2,  Gun, Uni, 1, 0    ; Met
+Miniaturização,     4, 1,  Too, E2,  3, 4    ; Min
+Guerra de Movimento,8,-1,  Aut, Tac, 3, 0    ; Mob
+Monarquia,          5, 1,  Cer, CoL, 0, 2    ; Mon
+Monoteísmo,         5, 1,  Phi, PT,  1, 2    ; MT
+Misticismo,         4, 0,  Cer, nil, 0, 2    ; Mys
+Navegação,          6,-1,  Sea, Ast, 1, 1    ; Nav
+Fissão Nuclear,     6,-2,  Ato, MP,  3, 3    ; NF
+Energia Nuclear,    3, 0,  NF,  E2,  3, 3    ; NP
+Filosofia,          6, 1,  Mys, Lit, 1, 2    ; Phi
+Física,             4,-1,  Nav, Lit, 1, 3    ; Phy
+Plásticos,          4, 1,  Ref, SFl, 3, 4    ; Pla
+Encanamento,        4, 0,  no,  no,  1, 4    ; Plu  (Cst & Pot)
+Politeísmo,         4, 0,  Cer, Hor, 0, 2    ; PT
+Cerâmica,           4, 1,  nil, nil, 0, 1    ; Pot
+Rádio,              5,-1,  Fli, E1,  3, 4    ; Rad
+Ferrovia,           6, 0,  SE, Bri,  2, 1    ; RR
+Reciclagem,         2, 1,  MP, Dem,  3, 2    ; Rec
+Refino,             4, 0,  Che, Cor, 2, 4    ; Ref
+Refrigeração,       3, 1,  E1,  San, 3, 1    ; Rfg
+República,          5, 1,  CoL, Lit, 0, 2    ; Rep
+Robótica,           5,-2,  Cmp, Mob, 3, 0    ; Rob
+Foguetes,           6,-2,  AFl, E2,  3, 0    ; Roc
+Saneamento,         4, 2,  Med, Eng, 2, 1    ; San
+Náutica,            4, 1,  Map, Pot, 0, 1    ; Sea
+Voo Espacial,       4, 1,  Cmp, Roc, 3, 3    ; SFl
+Stealth,            3,-2,  Sup, Rob, 3, 0    ; Sth
+Motor a Vapor,      4,-1,  Phy, Inv, 2, 3    ; SE
+Aço,                4,-1,  E1,  Ind, 2, 4    ; Stl
+Supercondutor,      4, 1,  Pla, Las, 3, 3    ; Sup
+Tática,             6,-1,  Csc, Ldr, 2, 0    ; Tac
+Teologia,           3, 2,  MT,  Feu, 1, 2    ; The
+Teoria da Gravidade,4, 0,  Ast, Uni, 1, 3    ; ToG
+Comércio,           4, 2,  Cur, CoL, 0, 1    ; Tra
+Universidade,       5, 1,  Mat, Phi, 1, 3    ; Uni
+Código Guerreiro,   4,-1,  nil, nil, 0, 0    ; War
+Roda,               4,-1,  Hor, nil, 0, 4    ; Whe
+Escrita,            4, 2,  Alp, nil, 0, 3    ; Wri
+Tecnologia Futura,  1, 0,  FP,  Rec, 3, 3    ; ...
+User Def Tech A,    3, 0,  no,  no,  0, 0    ; U1
+User Def Tech B,    3, 0,  no,  no,  0, 0    ; U2
+User Def Tech C,    3, 0,  no,  no,  0, 0    ; U3
+;
+; Above 3 tech lots allow you to define your own civilization
+; advances if desired.  Supply the name, the AI value, and
+; the prerequisites.
+;
+; Then use the "U1", "U2", or "U3"
+; identifier to incorporate it into the tech chain as a
+; prerequisite for other techs, units, city improvements.
+;
+
+;
+;  City Improvements
+;
+;   cost(x10), upkeep, preq
+;
+@IMPROVE
+Nada,                     1,  0,    nil,
+Palácio,                  10, 0,    Mas,
+Quartel,                  4,  1,    nil,
+Celeiro,                  6,  1,    Pot,
+Templo,                   4,  1,    Cer,
+Feira,                    8,  1,    Cur,
+Biblioteca,               8,  1,    Wri,
+Tribunal,                 8,  1,    CoL,
+Muralhas,                 8,  0,    Mas,
+Aqueduto,                 8,  2,    Cst,
+Banco,                    12, 3,    Ban,
+Catedral,                 12, 3,    MT,
+Universidade,             16, 3,    Uni,
+Transporte Coletivo,      16, 4,    MP,
+Coliseu,                  10, 4,    Cst,
+Fábrica,                  20, 4,    Ind,
+Manufatureira,            32, 6,    Rob,
+Defesa SDI,               20, 4,    Las,
+Recicladora,              20, 2,    Rec,
+Termelétrica,             16, 4,    Ref,
+Hidrelétrica,             24, 4,    E2,
+Usina Nuclear,            16, 2,    NP,
+Bolsa,                    16, 4,    Eco,
+Esgotos,                  12, 2,    San,
+Supermercado,              8, 3,    Rfg,
+Auto-Estradas,            20, 5,    Aut,
+Laboratório,              16, 3,    Cmp,
+Bateria SAM,              10, 2,    Roc,
+Fortaleza Costeira,        8, 1,    Met,
+Usina Solar,              32, 4,    Env,
+Ancoradouro,               6, 1,    Sea,
+Plataforma Marítima,      16, 3,    Min,
+Aeroporto,                16, 3,    Rad,
+Delegacia,                 6, 2,    Cmn,
+Porto,                     8, 3,    Amp,
+Estrutura Espacial,        8, 0,    SFl,
+Componente Espacial,      16, 0,    Pla,
+Módulo Espacial,          32, 0,    Sup,
+(Capitalização),          60, 0,    Cor,
+Pirâmides,                20, 0,    Mas,
+Jardins Suspensos,        20, 0,    Pot,
+Colosso,                  20, 0,    Bro,
+Farol,                    20, 0,    Map,
+Grande Biblioteca,        30, 0,    Lit,
+Oráculo,                  30, 0,    Mys,
+Grande Muralha,           30, 0,    Mas,
+Academia de Sun Tzu,      30, 0,    Feu,
+Cruzada do Rei Ricardo,   30, 0,    Eng,
+Embaixada de Marco Polo,  20, 0,    Tra,
+Capela de Michelangelo,   40, 0,    MT,
+Observatório de Copérnico,30, 0,    Ast,
+Expedição de Magalhães,   40, 0,    Nav,
+Teatro de Shakespeare,    30, 0,    Med,
+Oficina de Leonardo,      40, 0,    Inv,
+Catedral de Bach,         40, 0,    The,
+Faculdade de Newton,      40, 0,    ToG,
+Empresa de Adam Smith,    40, 0,    Eco,
+Viagem de Darwin,         40, 0,    RR,
+Estátua da Liberdade,     40, 0,    Dem,
+Torre Eiffel,             30, 0,    SE,
+Sufrágio Feminino,        60, 0,    Ind,
+Represa Hoover,           60, 0,    E2,
+Projeto Manhattan,        60, 0,    NF,
+ONU,                      60, 0,    Cmn,
+Programa Apollo,          60, 0,    SFl,
+Programa SETI,            60, 0,    Cmp,
+Cura do Câncer,           60, 0,    Gen,
+
+;
+; Expiration advancements for Wonders of the World
+;
+@ENDWONDER
+nil,        ; Pyramids
+RR,         ; Hanging Gardens
+Fli,        ; Colossus
+Mag,        ; Lighthouse
+E1,         ; Great Library
+The,        ; Oracle
+Met,        ; Great Wall
+Mob,        ; Sun Tzu's War Academy
+Ind,        ; King Richard's Crusade
+Cmn,        ; Marco Polo's Embassy
+nil,        ; Magellan
+nil,        ; Michelangelo
+nil,        ; Copernicus
+nil,        ; Shakespeare
+Aut,        ; Da Vinci's Workshop
+nil,        ; Bach
+nil,        ; Newton
+nil,        ; Smith's Trading Co.
+nil,        ; Darwin
+nil,        ; Statue of Liberty
+nil,        ; Eiffel Tower
+nil,        ; Hoover Dam
+nil,        ; Womens' Suffrage
+nil,        ; Manhattan Project
+nil,        ; United Nations
+nil,        ; Apollo
+nil,        ; SETI
+nil,        ; Cure for Cancer
+
+
+;
+;    Unit Types
+;
+; until, domain,  move,rng,  att,def  hit,firepwr  cost,hold,  role, preq,  flags
+;
+; until       = Civ advance which renders unit obsolete
+; Move        = Movement rate (spaces per turn)
+; Range       = # of turns fuel carried (0 for non-air units)
+;
+; domain      = Movement domain of unit
+:               0 = Ground
+;               1 = Air
+;               2 = Sea
+;
+; att         = Attack factor (chance to score hit attacking)
+; def         = Defense factor (chance to score hit defending)
+; hit         = Hit points (damage x10 which can be taken before elimination)
+; firepwr     = # damage points caused per hit scored on enemy.
+;
+; cost        = Cost (# of shield rows, usually of 10 shields each)
+; hold        = # of holds on ship (for carrying units)
+;
+; role        = AI role (Generally affects the way in
+;               which computer players use the unit, but
+;               roles >= 5 will actually affect abilities
+;               of the unit)
+;               0 = Attack
+;               1 = Defend
+;               2 = Naval Superiority
+;               3 = Air Superiority
+;               4 = Sea Transport
+;               5 = Settle
+;               6 = Diplomacy
+;               7 = Trade
+;
+; preq        = Prerequisite advance
+;
+; "Flags" control special advantages & restrictions.  Not
+; all of these flags "make sense" for all types of units
+; (paradropping ships, for instance).  Nonsensical variations
+; may produce bizarre effects (or worse).  You were warned.
+;
+;   000000000000001 = Two space visibility
+;   000000000000010 = Ignore zones of control
+;   000000000000100 = Can make amphibious assaults
+;   000000000001000 = Submarine advantages/disadvantages
+;   000000000010000 = Can attack air units (fighter)
+;   000000000100000 = Ship must stay near land (trireme)
+;   000000001000000 = Negates city walls (howitzer)
+;   000000010000000 = Can carry air units (carrier)
+;   000000100000000 = Can make paradrops
+;   000001000000000 = Alpine (treats all squares as road)
+;   000010000000000 = x2 on defense versus horse (pikemen)
+;   000100000000000 = Free support for fundamentalism (fanatics)
+;   001000000000000 = Destroyed after attacking (missiles)
+;   010000000000000 = x2 on defense versus air (AEGIS)
+;   100000000000000 = Unit can spot submarines
+;
+;
+@UNITS
+Colonos,      Exp, 0,  1.,0,  0a,1d,  2h,1f,  4,0,  5, nil, 000000000000000
+Engenheiros,  nil, 0,  2.,0,  0a,2d,  2h,1f,  4,0,  5, Exp, 000000000000010
+Guerreiros,   Feu, 0,  1.,0,  1a,1d,  1h,1f,  1,0,  1, nil, 000000000000000
+Falange,      Feu, 0,  1.,0,  1a,2d,  1h,1f,  2,0,  1, Bro, 000000000000000
+Arqueiros,    Gun, 0,  1.,0,  3a,2d,  1h,1f,  3,0,  1, War, 000000000000000
+Legião,       Gun, 0,  1.,0,  4a,2d,  1h,1f,  4,0,  1, Iro, 000000000000000
+Lanceiros,    Gun, 0,  1.,0,  1a,2d,  1h,1f,  2,0,  1, Feu, 000010000000000
+Mosqueteiros, Csc, 0,  1.,0,  3a,3d,  2h,1f,  3,0,  1, Gun, 000000000000000
+Fanáticos,    nil, 0,  1.,0,  4a,4d,  2h,1f,  2,0,  1, Fun, 000100000000000
+Partisans,    nil, 0,  1.,0,  4a,4d,  2h,1f,  5,0,  1, Gue, 000001000000010
+Força Alpina, nil, 0,  1.,0,  5a,5d,  2h,1f,  5,0,  1, Tac, 000001000000000
+Carabineiros, nil, 0,  1.,0,  5a,4d,  2h,1f,  4,0,  1, Csc, 000000000000000
+Marines,      nil, 0,  1.,0,  8a,5d,  2h,1f,  6,0,  0, Amp, 000000000000100
+Paras,        nil, 0,  1.,0,  6a,4d,  2h,1f,  6,0,  1, CA,  000000100000000
+Inf. Mec.,    nil, 0,  3.,0,  6a,6d,  3h,1f,  5,0,  1, Lab, 000000000000000
+Ginetes,      Chi, 0,  2.,0,  2a,1d,  1h,1f,  2,0,  0, Hor, 000000000000000
+Biga,         PT,  0,  2.,0,  3a,1d,  1h,1f,  3,0,  0, Whe, 000000000000000
+Elefantes,    MT,  0,  2.,0,  4a,1d,  1h,1f,  4,0,  0, PT,  000000000000000
+Cruzados,     Ldr, 0,  2.,0,  5a,1d,  1h,1f,  4,0,  0, MT,  000000000000000
+Fidalgos,     Ldr, 0,  2.,0,  4a,2d,  1h,1f,  4,0,  0, Chi, 000000000000000
+Dragões,      Tac, 0,  2.,0,  5a,2d,  2h,1f,  5,0,  0, Ldr, 000000000000000
+Cavalaria,    Mob, 0,  2.,0,  8a,3d,  2h,1f,  6,0,  0, Tac, 000000000000000
+Tanques,      nil, 0,  3.,0, 10a,5d,  3h,1f,  8,0,  0, Mob, 000000000000000
+Catapulta,    Met, 0,  1.,0,  6a,1d,  1h,1f,  4,0,  0, Mat, 000000000000000
+Canhão,       Too, 0,  1.,0,  8a,1d,  2h,1f,  4,0,  0, Met, 000000000000000
+Artilharia,   Rob, 0,  1.,0, 10a,1d,  2h,2f,  5,0,  0, Too, 000000000000000
+Obus,         nil, 0,  2.,0, 12a,2d,  3h,2f,  7,0,  0, Rob, 000000001000000
+Caça,         Sth, 1, 10.,1,  4a,3d,  2h,2f,  6,0,  3, Fli, 000000000010001
+Bombardeiro,  Sth, 1,  8.,2, 12a,1d,  2h,2f, 12,0,  0, AFl, 000000000000001
+Helicóptero,  nil, 1,  6.,0, 10a,3d,  2h,2f, 10,0,  0, CA,  100000000000001
+Caça Stealth, nil, 1, 14.,1,  8a,4d,  2h,2f,  8,0,  3, Sth, 000000000010001
+Bomb. Stealth,nil, 1, 12.,2, 14a,5d,  2h,2f, 16,0,  0, Sth, 000000000000001
+Trirreme,     Nav, 2,  3.,0,  1a,1d,  1h,1f,  4,2,  4, Map, 000000000100000
+Caravela,     Mag, 2,  3.,0,  2a,1d,  1h,1f,  4,3,  4, Nav, 000000000000000
+Galeão,       Ind, 2,  4.,0,  0a,2d,  2h,1f,  4,4,  4, Mag, 000000000000000
+Fragata,      E1,  2,  4.,0,  4a,2d,  2h,1f,  5,2,  2, Mag, 000000000000000
+Couraçado,    E1,  2,  4.,0,  4a,4d,  3h,1f,  6,0,  2, SE,  000000000000000
+Destróier,    nil, 2,  6.,0,  4a,4d,  3h,1f,  6,0,  2, E1,  100000000000001
+Cruzador,     Roc, 2,  5.,0,  6a,6d,  3h,2f,  8,0,  2, Stl, 100000000000001
+Cruz. Aegis,  nil, 2,  5.,0,  8a,8d,  3h,2f, 10,0,  2, Roc, 110000000000001
+Encouraçado,  nil, 2,  4.,0, 12a,12d, 4h,2f, 16,0,  2, Aut, 000000000000001
+Submarino,    nil, 2,  3.,0, 10a,2d,  3h,2f,  6,0,  2, Cmb, 000000000001001
+Porta-Aviões, nil, 2,  5.,0,  1a,9d,  4h,2f, 16,0,  2, AFl, 000000010000001
+Transporte,   nil, 2,  5.,0,  0a,3d,  3h,1f,  5,8,  4, Ind, 000000000000000
+Mís. Cruise,  nil, 1, 12.,1, 18a,0d,  1h,3f,  6,0,  0, Roc, 001000000000000
+Mís. Nuclear, nil, 1, 16.,1, 99a,0d,  1h,1f, 16,0,  0, Roc, 001000000000000
+Diplomata,    Esp, 0,  2.,0,  0a,0d,  1h,1f,  3,0,  6, Wri, 000000000000010
+Espiã,        nil, 0,  3.,0,  0a,0d,  1h,1f,  3,0,  6, Esp, 000000000000011
+Caravana,     Cor, 0,  1.,0,  0a,1d,  1h,1f,  5,0,  7, Tra, 000000000000010
+Fretista,     nil, 0,  2.,0,  0a,1d,  1h,1f,  5,0,  7, Cor, 000000000000010
+Explorador,   Gue, 0,  1.,0,  0a,1d,  1h,1f,  3,0,  0, Sea, 000001000000010
+Extra Land,   nil, 0,  1.,0,  1a,1d,  1h,1f,  5,0,  0, no,  000000000000000
+Extra Ship,   nil, 2,  4.,0,  4a,2d,  2h,1f,  5,1,  2, no,  000000000000000
+Extra Air,    nil, 1,  8.,4,  8a,8d,  2h,2f, 10,0,  0, no,  000000000000000
+
+;
+; Note: the above 3 unit types (extra land, ship, air) are available
+; for user defined unit types.  If these units are given prerequisites
+; other than "no" they will appear in the game when the specified
+; technology is reached.  Use if you want to create your own unit types
+; without sacrificing any of the predefined units.  Be sure to define
+; the "role" field accurately, so that the computer will understand how
+; to make use of the new units in its own civilizations.
+;
+; There is no requirement that the extra units be used to
+; create exactly one of each type; you could create three
+; ground units.  But the icons provided are for one of each.
+; The 3 extra unit types have default icons provided by the game.
+; To actually change the icons is a somewhat more difficult
+; task.  The icons are stored in "UNITS.GIF".
+;
+; Sound effects for these three units may be added by providing
+; CUSTOM1.WAV, CUSTOM2.WAV, and CUSTOM3.WAV.  These should be
+; 8-bit, mono, and sampled at 22050hz.
+;
+; Ideas:
+;
+; Hovercraft,   nil, 2,  8.,0,  0a,1d,  2h,2f,  7,1,  4, MP,  000000000000000
+;
+
+
+;
+;  Terrain
+;
+;  Movecost, defense,   food, shields, trade,
+;        . . .  Irrigate, bonus, #turns, ai-irrigate,
+;        . . .  Mine,     bonus, #turns, ai-mine
+;        . . .  Transform
+;
+;   defense = multiply by 50% to get % of normal combat factor defended at.
+;       (so 3 x 50% = 150%, meaning a strength 2 unit defends at 3).
+;
+;  Irrigate/Mine = yes, no, or type of terrain changed to
+;  Transform     = Terrain type engineers can transform to
+;
+;  bonus = # extra production from that change
+;
+;  turns = # turns for settler to make change
+;
+;  ai    = Minimum govt level necessary for
+;          computer player to want to perform irrigate/mine
+;        0 Never
+;        1 Despotism
+;        2 Monarchy
+;        3 Communism
+;        4 Fundamentalism
+;        5 Republic
+;        6 Democracy
+;
+@TERRAIN
+Deserto,    1,2,  0,1,0,   yes, 1, 5, 5,   yes, 1, 5,  3,  Pln,   ; Drt
+Planície,   1,2,  1,1,0,   yes, 1, 5, 1,   For, 0,15,  0,  Grs,   ; Pln
+Pradaria,   1,2,  2,1,0,   yes, 1, 5, 2,   For, 0,10,  0,  Hil,   ; Grs
+Floresta,   2,3,  1,2,0,   Pln, 0, 5, 5,   no,  0, 5,  0,  Grs,   ; For
+Colinas,    2,4,  1,0,0,   yes, 1,10, 0,   yes, 3,10,  1,  Pln,   ; Hil
+Montanhas,  3,6,  0,1,0,   no,  1,10, 0,   yes, 1,10,  6,  Hil,   ; Mou
+Tundra,     1,2,  1,0,0,   yes, 1,10, 1,   no,  0, 0,  0,  Drt,   ; Tun
+Geleira,    2,2,  0,0,0,   no,  0, 0, 0,   yes, 1,15,  3,  Tun,   ; Gla
+Pântano,    2,3,  1,0,0,   Grs, 0,15, 6,   For, 0,15,  0,  Pln,   ; Swa
+Selva,      2,3,  1,0,0,   Grs, 0,15, 6,   For, 0,15,  0,  Pln,   ; Jun
+Oceano,     1,2,  1,0,2,   no,  0, 0, 0,   no,  0, 0,  0,  no,    ; Oce
+Oásis,      1,2,  3,1,0,
+Bisão,      1,2,  1,3,0,
+Pradaria,   1,2,  2,1,0,
+Faisão,     2,3,  3,2,0,
+Carvão,     2,4,  1,2,0,
+Ouro,       3,6,  0,1,6,
+Caça,       1,2,  3,1,0,
+Marfim,     2,2,  1,1,4,
+Turfa,      2,3,  1,4,0,
+Gemas,      2,3,  1,0,4,
+Pesca,      1,2,  3,0,2,
+Petróleo,   1,2,  0,4,0,
+Trigo,      1,2,  3,1,0,
+Pradaria,   1,2,  2,1,0,
+Seda,       2,3,  1,2,3,
+Vinho,      2,4,  1,0,4,
+Ferro,      3,6,  0,4,0,
+Peles,      1,2,  2,0,3,
+Petróleo,   2,2,  0,4,0,
+Especiarias,2,3,  3,0,4,
+Frutas,     2,3,  4,0,1,
+Baleias,    1,2,  2,2,3,
+
+
+
+
+@GOVERNMENTS
+Anarquia,       Sr.,         Sra.
+Despotismo,     Imperador,   Imperatriz
+Monarquia,      Rei,         Rainha
+Comunismo,      Camarada,    Camarada
+Fundamentalismo,Venerável,   Venerável
+República,      Cônsul,      Cônsul
+Democracia,     Presidente,  Presidenta
+
+;
+;   Leaders
+;
+;   leader, female, color, style, plural, adjective, ...
+;           ...attack, expand, civilize, ...
+;           ...govt, male, female...<repeat>
+;
+;   female:     0 = male           1 = female
+;
+;   color:  Color set (1 - 7)
+;   style:  City style (0 - 3)
+;           0 = Bronze Age
+;           1 = Classical
+;           2 = Far East
+;           3 = Medieval
+;
+;   attack:     1 = aggressive    -1 = rational
+;   expand:     1 = expansionist  -1 = perfectionist
+;   civilize:   1 = civilized     -1 = militaristic
+;
+;   govt = government type for name replacement (0 = Anarchy, 6 = Democracy)
+;
+;   male, female = titles for leader of government
+;
+@LEADERS
+César, Lívia, 0, 1, 1, romanos(as), romano(a), 0, 1, 1, 1, Ditador, Ditadora, 2, Imperador, Imperatriz
+Hamurábi, Ishtari, 0, 2, 0, babilônios(as), babilônio(a), -1, -1, 1,
+Frederico, Maria Teresa, 0, 3, 3, alemães(ãs), alemão(ã), 1, -1, 1, 4, Arcebispo, Arcebispo, 6, Chanceler, Chanceler
+Ramsés, Cleópatra, 1, 4, 0, egípcios(as), egípcio(a), 0, 0, 1, 1, Faraó, Rainha, 2, Grande Faraó, Grande Rainha
+Abe Lincoln, E. Roosevelt, 0, 5, 1, americanos(as), americano(a), -1, 0, 1, 4, Reverendo, Reverenda, 5, Presidente, Presidenta
+Alexandre, Hipólita, 1, 6, 1, gregos(as), grego(a), 0, 1, -1, 6, Primeiro-Ministro, Primeira-Ministra
+Mohandas Gandhi, Indira Gandhi, 0, 7, 2, indianos(as), indiano(a), -1, -1, 0, 2, Marajá, Marani
+Lênin, Catarina II, 1, 1, 3, russos(as), russo(a), 1, 0, -1, 2, Czar, Czarina, 4, Patriarca, Matriarca
+Shaka, Shakala, 0, 2, 0, zulus, zulu, 1, 0, 0,
+Luís XIV, Joana d'Arc, 0, 3, 3, franceses(as), francês(a), 1, 1, 1, 4, Arcebispo, Arcebispo, 6, Primeiro-Ministro, Primeira-Ministra
+Montezuma, Nazca, 0, 4, 0, astecas, asteca, 0, -1, 1,
+Mao Tse-Tung, Wu Zhao, 0, 5, 2, chineses(as), chinês(a), 0, 0, 1, 3, Presidente, Presidenta
+Henrique VIII, Elisabete I, 1, 6, 3, ingleses(as), inglês(a), 0, 1, 0, 4, Lorde Protetor, Lady Protetora, 6, Primeiro-Ministro, Primeira-Ministra
+Gêngis Cã, Bortei, 0, 7, 0, mongóis, mongol, 1, 1, -1,
+Cunobelino, Boadicéia, 1, 1, 0, celtas, celta, -1, 1, 0, 4, Druida, Druidesa
+Tokugawa, Amaterasu, 0, 2, 2, japoneses(as), japonês(a), 1, -1, -1, 2, Xógum, Xógum, 6, Primeiro-Ministro, Primeira-Ministra
+Canuto, Gunnhild, 1, 3, 3, vikings, viking, 1, 1, 0, 1, Chefe, Chefe
+Filipe II, Isabel, 1, 4, 3, espanhóis(las), espanhol(a), -1, 1, -1, 4, Arcebispo, Arcebispo
+Xerxes, Scheherezade, 0, 5, 0, persas, persa, 0, -1, 0, 2, Xá, Rainha, 4, Aiatolá, Aiatolá
+Aníbal, Dido, 0, 6, 1, cartagineses, cartaginês(a), 0, 0, -1,
+Touro Sentado, Sacajawea, 0, 7, 0, sioux, sioux, 0, 0, 0, 1, Chefe, Chefe, 2, Grande Chefe, Grande Chefe
+Saladino, ..., 0, 5, árabes, árabe 1, 0, 1, 4, Aiatolá, Aiatolá, 2, Sultão, Sultana
+Ataualpa, ..., 0, 1, incas, inca, -1, 1, 1,
+
+
+
+;
+;   Trading Commodities
+;
+@CARAVAN
+Couros,
+Lã,
+Contas,
+Pano,
+Sal,
+Carvão,
+Cobre,
+Corantes,
+Vinho,
+Seda,
+Prata,
+Especiarias,
+Gemas,
+Ouro,
+Petróleo,
+Urânio,
+
+
+@ORDERS
+Fortificar,         F
+Fortificada,        F
+Descansar,          S
+Criar Fortaleza,    F
+Criar Estrada,      R
+Criar Irrigação,    I
+Criar Mineração,    m
+Transformar,        O
+Limpar Poluição,    p
+Criar Base Aérea,   E
+Ir Para,            G
+
+
+@DIFFICULTY
+Chefe
+Caudilho
+Príncipe
+Rei
+Imperador
+Divindade
+
+@ATTITUDES
+Reverente
+Entusiástico
+Cordial
+Receptivo
+Neutro
+Não-cooperativo
+Frio
+Hostil
+Furioso
+

@@ -1,0 +1,499 @@
+;
+;   CIVILIZATION CIVILOPEDIA TEXT
+;   Copyright (c) 1995 by MicroProse Software
+;
+;   Altering the contents of this file may cause the
+;   game to malfunction.
+;
+
+@PEDIAPICKCIV
+@width=540
+@columns=3
+@listbox
+@title=Civilopédia: Avanços da Civilização
+
+@PEDIACIV
+@width=480
+@title=Avanço da Civilização
+^^%STRING0
+^
+
+
+@PEDIACIVFACTS
+^Possibilita forma de governo do mesmo nome.
+^Possibilita a Colonos criar Fortalezas.
+^Possibilita a Colonos criar Bases Aéreas.
+^Possibilita a Colonos criar Ferrovias.
+^Possibilita a Colonos melhorar terra arável.
+^Aumenta o efeito de Templos.
+^Aumenta o efeito de Coliseus.
+^Vale bônus na Pontuação da Civilização.
+^Aumenta em 1 o ritmo de movimento de navios.
+^Aumenta em 25%% o empuxo de Espaçonaves.
+^Avanço grátis p/ primeira civilização a descobri-lo.
+^Diminui o efeito de Catedrais.
+^Cancela o efeito de
+
+
+@PEDIAPICKUNIT
+@width=540
+@columns=3
+@listbox
+@title=Civilopédia: Tipos de Unidade
+
+@PEDIAUNIT
+@width=480
+@title=Tipo de Unidade
+^^%STRING0
+^
+
+@PEDIAUNITFACTS
+^Capaz de detectar unidades a dois quadrados.
+^Ignora Zonas de Controle inimigas.
+^Capaz de desembarques anfíbios.
+^Invisível à maioria dos navios inimigos.
+^Capaz de ataques a aeronaves em voo.
+^Pode perder-se longe da terra.
+^Ignora Muralhas.
+^Capaz de levar unidades aéreas amigas.
+^Capaz de saltos.
+^Trata todo quadrado como quadrado de Estrada.
+^Defesa de +50%% vs. unidades c/ ritmo de movimento 2.
+^Só o Fundamentalismo é capaz de criar.
+^Destruída depois de atacar.
+^Defesa de +100%% vs. unidades aéreas e de mísseis.
+^Capaz de detectar subs inimigos em quadrados adjacentes.
+
+
+@PEDIAPICKGOVT
+@width=480
+@listbox
+@title=Civilopédia: Governos
+
+
+@PEDIAPICKIMPROVE
+@width=540
+@columns=3
+@listbox
+@title=Civilopédia: Melhoramentos Urbanos
+
+@PEDIAIMPROVE
+@width=480
+@title=Melhoramento Urbano
+^^%STRING0
+^
+
+@;Palace
+@PEDIAIMPROVE1
+Elimina corrupção e desperdício na cidade e os diminui em todas as cidades próximas.
+
+@;Barracks
+@PEDIAIMPROVE2
+Cidade produz unidades terrestres veteranas. Unidades terrestres podem ser reparadas por completo numa única rodada.
+
+@;Granary
+@PEDIAIMPROVE3
+Só metade da comida estocada da cidade é consumida quando a cidade cresce.
+
+@;Temple
+@PEDIAIMPROVE4
+Até dois cidadãos infelizes ficam resignados.
+
+@;Marketplace
+@PEDIAIMPROVE5
+Eleva disponibilidade de impostos e luxos em 50%%.
+
+@;Library
+@PEDIAIMPROVE6
+Eleva disponibilidade de ciência em 50%%.
+
+@;Courthouse
+@PEDIAIMPROVE7
+Reduz corrupção em 50%%. Cidade fica mais resistente a suborno de unidades Diplomata e Espiã inimigas. Na Democracia, um cidadão resignado fica feliz.
+
+@;City Walls
+@PEDIAIMPROVE8
+Unidades na cidade triplicam na defesa vs. unidades terrestres.
+
+@;Aqueduct
+@PEDIAIMPROVE9
+Possibilita à cidade crescer para além do tamanho 8.
+
+@;Bank
+@PEDIAIMPROVE10
+Eleva disponibilidade de impostos e luxos em 50%% adicionais (cumulativo c/ Feira).
+
+@;Cathedral
+@PEDIAIMPROVE11
+Deixa resignados quatro cidadãos infelizes (três após Comunismo).
+
+@;University
+@PEDIAIMPROVE12
+Eleva disponibilidade de ciência em 50%% adicionais (cumulativo c/ Biblioteca).
+
+@;Mass Transit
+@PEDIAIMPROVE13
+Elimina poluição causada pela população.
+
+@;Colosseum
+@PEDIAIMPROVE14
+Três cidadãos infelizes ficam resignados (quatro c/ Eletrônica).
+
+@;Factory
+@PEDIAIMPROVE15
+Aumenta produção de escudos na cidade em 50%%.
+
+@;Mfg. Plant
+@PEDIAIMPROVE16
+Aumenta produção de escudos em 50%% adicionais (cumulativo c/ Fábrica).
+
+@;SDI Defense
+@PEDIAIMPROVE17
+Protege de ataque nuclear tudo até três quadrados da cidade.
+
+@;Recycling Center
+@PEDIAIMPROVE18
+Reduz poluição causada por Fábricas.
+
+@;Power Plant
+@PEDIAIMPROVE19
+Aumenta produção das Fábricas em 50%%.
+
+@;Hydro Plant
+@PEDIAIMPROVE20
+Aumenta produção das Fábricas em 50%%. Mais limpa que Termelétricas e, em geral, mais segura que Usinas Nucleares.
+
+@;Nuclear Plant
+@PEDIAIMPROVE21
+Aumenta produção das Fábricas em 50%%. Mais limpa que Termelétrica (tanto quanto Hidrelétricas), mas haverá risco de acidente nuclear se a civilização não descobrir a Fusão.
+
+@;Stock Exchange
+@PEDIAIMPROVE22
+Eleva disponibilidade de impostos e luxos em 50%% adicionais (cumulativo c/ Feira e Banco p/ um total de 150%%).
+
+@;Sewer System
+@PEDIAIMPROVE23
+Possibilita à cidade crescer para além do tamanho 12.
+
+@;Supermarket
+@PEDIAIMPROVE24
+Possibilita a quadrados no raio urbano c/ melhoramento terra arável (irrigados duas vezes) produzir 50%% mais comida.
+
+@;Superhighways
+@PEDIAIMPROVE25
+Todo quadrado no raio urbano c/ Estradas (ou Ferrovias) produz 50%% mais riqueza.
+
+@;Research Lab
+@PEDIAIMPROVE26
+Eleva disponibilidade de ciência em 50%% adicionais (cumulativo c/ Biblioteca e Universidade p/ um total de 150%%).
+
+@;SAM Missile Battery
+@PEDIAIMPROVE27
+Unidades na cidade dobram na defesa vs. unidades aéreas e de mísseis não-nucleares.
+
+@;Coastal Fortress
+@PEDIAIMPROVE28
+Unidades na cidade dobram na defesa vs. bombardeio naval inimigo.
+
+@;Solar Plant
+@PEDIAIMPROVE29
+Aumenta produção das Fábricas em 50%%. Mais limpa que todas as outras formas de energia.
+
+@;Harbor
+@PEDIAIMPROVE30
+Todo quadrado de Oceano no raio urbano produz um grão extra.
+
+@;Offshore Platform
+@PEDIAIMPROVE31
+Todo quadrado de Oceano no raio urbano produz um escudo.
+
+@;Airport
+@PEDIAIMPROVE32
+Cidade produz unidades aéreas veteranas. Toda unidade aérea que passe sua rodada inteira na cidade é reparada por completo.
+
+@;Police Station
+@PEDIAIMPROVE33
+Reduz em um a infelicidade causada por tropas longe da cidade.
+
+@;Port Facility
+@PEDIAIMPROVE34
+Cidade produz unidades navais veteranas. Todo navio que passe sua rodada inteira na cidade é reparado por completo.
+
+@;SS Structural
+@PEDIAIMPROVE35
+
+@;SS Component
+@PEDIAIMPROVE36
+
+@;SS Module
+@PEDIAIMPROVE37
+
+@;Capitalization
+@PEDIAIMPROVE38
+Converte produção em riqueza.
+
+@;Pyramids
+@PEDIAIMPROVE39
+Conta como um Celeiro em cada uma de suas cidades.
+
+@;Hanging Gardens
+@PEDIAIMPROVE40
+Um cidadão feliz extra em cada cidade.
+
+@;Colossus
+@PEDIAIMPROVE41
+Cidade produz uma seta extra em cada quadrado que já produza uma.
+
+@;Lighthouse
+@PEDIAIMPROVE42
+Trirremes podem mover-se s/ perigo, e todas as outras unidades navais têm aumentado em 1 seu ritmo de movimento. Toda unidade naval nova que você produzir terá status de veterana.
+
+@;Great Library
+@PEDIAIMPROVE43
+Civilização recebe todo avanço já descoberto por duas outras civilizações.
+
+@;Oracle
+@PEDIAIMPROVE44
+Dobra o efeito de todos os seus Templos.
+
+@;Great Wall
+@PEDIAIMPROVE45
+Civilizações inimigas precisam oferecer cessar-fogo em negociações. Força de combate dobrada vs. bárbaros.
+
+@;Sun Tzu's War Academy
+@PEDIAIMPROVE46
+Toda nova unidade terrestre recebe status de veterana. Toda unidade que vença um combate recebe status de veterana.
+
+@;King Richard's Crusade
+@PEDIAIMPROVE47
+Todo quadrado no raio urbano produz um escudo extra.
+
+@;Marco Polo's Embassy
+@PEDIAIMPROVE48
+Você recebe uma embaixada grátis p/ cada civilização rival (assim, seus relatórios da Inteligência serão sempre completos, e você receberá atualizações sempre que outra civilização descobrir tecnologias).
+
+@;Michelangelo's Chapel
+@PEDIAIMPROVE49
+Conta como uma Catedral em cada uma de suas cidades.
+
+@;Copernicus' Observatory
+@PEDIAIMPROVE50
+Eleva disponibilidade de ciência na cidade em 50%%.
+
+@;Magellan's Expedition
+@PEDIAIMPROVE51
+Aumenta em 2 o ritmo de movimento de todo navio.
+
+@:Shakespeare's Theatre
+@PEDIAIMPROVE52
+Todos os cidadãos infelizes da cidade ficam resignados.
+
+@;Da Vinci's Workshop
+@PEDIAIMPROVE53
+Sempre que uma de suas unidades ficar obsoleta por causa de alguma nova tecnologia que você tenha descoberto, será de imediato substituída por uma unidade moderna equivalente.
+
+@;J.S. Bach's Cathedral
+@PEDIAIMPROVE54
+Reduz cidadãos infelizes no mesmo continente em dois por cidade.
+
+@;Isaac Newton's College
+@PEDIAIMPROVE55
+Dobra ciência da cidade.
+
+@;Adam Smith's Trading Co.
+@PEDIAIMPROVE56
+Paga manutenção de todos os melhoramentos urbanos que costumem custar um ouro por rodada. Melhoramentos que requeiram mais que um ouro por rodada p/ manutenção não são afetados.
+
+@;Darwin's Voyage
+@PEDIAIMPROVE57
+Dois avanços da civilização grátis.
+
+@;The Statue of Liberty
+@PEDIAIMPROVE58
+Elimina o período de agitação entre dois governos. Também possibilita a escolha de qualquer tipo de governo, mesmo que o avanço em si ainda não tenha sido descoberto.
+
+@;The Eiffel Tower
+@PEDIAIMPROVE59
+Quando você obtém controle da Torre Eiffel pela primeira vez, a atitude de todas as civilizações é de imediato modificada 25 pontos em seu favor (numa escala de 100 pontos). As atitudes continuam a melhorar gradualmente com o passar do tempo. Outras civilizações também esquecem mais depressa suas transgressões passadas.
+
+@;Hoover Dam
+@PEDIAIMPROVE61
+Fornece uma Hidrelétrica para cada cidade em cada continente.
+
+@;Women's Suffrage
+@PEDIAIMPROVE60
+Conta como uma Delegacia em cada uma de suas cidades. (Reduz em um a infelicidade causada por tropas longe da cidade.)
+
+@;Manhattan Project
+@PEDIAIMPROVE62
+Possibilita criação de armas nucleares.
+
+@;United Nations
+@PEDIAIMPROVE63
+^* Embaixada grátis c/ cada uma das outras civilizações.
+^* Civ. inimigas não podem rejeitar seus tratados de paz.
+^* Como Democracia, pode declarar guerra em 50%% do tempo
+^  (missões de paz).
+
+@;Apollo Program
+@PEDIAIMPROVE64
+Possibilita criação de melhoramentos de Espaçonave.
+
+@;SETI Program
+@PEDIAIMPROVE65
+Conta como um Laboratório em cada uma de suas cidades e dobra sua produção científica.
+
+@;Cure for Cancer
+@PEDIAIMPROVE66
+Um cidadão feliz extra em cada cidade.
+
+@PEDIAGOVT
+@width=600
+@title=Civilization: Governos
+O tipo de governo que você escolher afetará a forma pela qual os recursos são distribuídos em suas cidades; o ritmo em que os cidadãos conseguem criar e sustentar novas unidades e melhoramentos urbanos; e o grau em que os cidadãos opinam no modo com que você os governa.
+^
+Alguns tipos de governo, como o Despotismo, a Monarquia e, mais tarde, o Comunismo e o Fundamentalismo, possibilitam que você se expanda rapidamente, crie e sustente grande número de unidades militares e controle inteiramente a tomada de decisões.
+^
+Já a República e a Democracia dão a seus cidadãos a liberdade de produzir muita riqueza, que, por sua vez, aumenta depressa o montante de conhecimentos e recursos. Por outro lado, os cidadãos ficam infelizes quando você envia unidades militares para fora das cidades; além disso, o Senado talvez tente interferir nas relações exteriores.
+^
+Para mudar o tipo de governo, é preciso uma revolução --selecione "Revolução" no menu Reino. Isso acarretará um breve período de Anarquia.
+
+@PEDIAGOVT0
+@width=600
+@title=Governo da Civilização: Anarquia
+A Anarquia representa não tanto um tipo de governo quanto a ausência de qualquer governo estável. Ela ocorre quando o governo de sua civilização cai ou quando você decide ter uma revolução. Após algumas rodadas de Anarquia, você será capaz de reconstituir o governo.
+^
+A Anarquia é similar ao Despotismo, exceto pelo fato de que na Anarquia o grau de corrupção é MUITO ALTO (ver Despotismo). Impostos não são recolhidos durante um período de Anarquia, e não se faz nenhuma pesquisa científica.
+
+@PEDIAGOVT1
+@width=600
+@title=Governo da Civilização: Despotismo
+^SUSTENTO DE UNIDADES
+Cada unidade acima do tamanho da cidade custa um escudo por rodada. Cada Colonos come um grão por rodada.
+^
+^FELICIDADE
+Até três unidades em cada cidade instituirão a lei marcial, deixando resignado um cidadão infeliz.
+^
+^CORRUPÇÃO E DESPERDÍCIO
+O Despotismo tem ALTO grau de corrupção e desperdício. O grau de corrupção em determinada cidade está ligado à distância da capital.
+^
+^ESPECIAL
+No Despotismo, nenhuma das taxas de impostos/luxos/ciência que você estabelece pode ultrapassar 60%%. TODO QUADRADO QUE NORMALMENTE PRODUZIRIA TRÊS OU MAIS ÍCONES DE RECURSO (GRÃOS, ESCUDOS, SETAS) PRODUZ UM A MENOS.
+^
+^DICAS
+Por causa do alto grau de corrupção, o Despotismo é quase sempre um tipo inferior de governo. Tente mudar para Monarquia tão logo possível.
+
+
+@PEDIAGOVT2
+@width=600
+@title=Governo da Civilização: Monarquia
+^SUSTENTO DE UNIDADES
+Cada unidade para além da terceira custa um escudo por rodada. Cada Colonos come um grão por rodada.
+^
+^FELICIDADE
+Até três unidades em cada cidade instituirão a lei marcial, deixando resignado um cidadão infeliz.
+^
+^CORRUPÇÃO E DESPERDÍCIO
+A Monarquia tem MODERADO grau de corrupção e desperdício. O grau de corrupção em determinada cidade está ligado à distância da capital.
+^
+^ESPECIAL
+Na Monarquia, nenhuma das taxas de impostos/luxos/ciência que você estabelece pode ultrapassar 70%%.
+^
+^DICAS
+A Monarquia é um excelente tipo de governo para civilizações jovens.
+
+
+@PEDIAGOVT3
+@width=600
+@title=Governo da Civilização: Comunismo
+^SUSTENTO DE UNIDADES
+Cada unidade para além da terceira custa um escudo por rodada. Cada Colonos come um grão por rodada.
+^
+^FELICIDADE
+Até três unidades em cada cidade instituirão a lei marcial, deixando resignados dois cidadãos infelizes (assim, podem-se eliminar seis cidadãos infelizes).
+^
+^CORRUPÇÃO E DESPERDÍCIO
+No Comunismo, o controle estatal da economia elimina o crime organizado. Por isso, suas cidades não têm corrupção.
+^
+^ESPECIAL
+Toda unidade Espiã criada no Comunismo recebem status de veterana. No Comunismo, nenhuma das taxas de impostos/luxos/ciência que você estabelece pode ultrapassar 80%%.
+^
+^DICAS
+O Comunismo é melhor para impérios muito extensos que precisem manter forças armadas grandes. Use suas poderosas unidades Espiã para roubar tecnologia dos porcos capitalistas.
+
+@PEDIAGOVT4
+@width=600
+@title=Governo da Civilização: Fundamentalismo
+^SUSTENTO DE UNIDADES
+Pode sustentar até dez unidades gratuitamente; unidades adicionais custam um escudo cada uma. Cada Colonos come um grão por rodada. Só o Fundamentalismo pode criar unidades Fanáticos.
+^
+^FELICIDADE
+No Fundamentalismo, os cidadãos nunca ficam infelizes!
+^
+^CORRUPÇÃO E DESPERDÍCIO
+O Fundamentalismo tem BAIXO grau de corrupção. No entanto, o Fundamentalismo tem uma desvantagem especial: toda a produção científica é reduzida à metade.
+^
+^ESPECIAL
+Melhoramentos que deixariam resignados cidadãos infelizes (Templos, etc.) produzem "dízimos" iguais ao número de cidadãos que converteriam. Além disso, não requerem manutenção. As penalidades diplomáticas por "atos terroristas" cometidos por suas unidades Diplomata e Espiã ficam reduzidas. No Fundamentalismo, nenhuma das taxas de impostos/luxos/ciência que você estabelece pode ultrapassar 80%%.
+^
+^DICAS
+O Fundamentalismo elimina todos os problemas de felicidade e provê excelente receita. A ciência tende a debilitar-se.
+
+
+@PEDIAGOVT5
+@width=600
+@title=Governo da Civilização: República
+^SUSTENTO DE UNIDADES
+Cada unidade custa um escudo por rodada. Cada Colonos come DOIS grãos por rodada.
+^
+^FELICIDADE
+Cada unidade militar DEPOIS DA PRIMEIRA que não esteja numa cidade amiga (ou numa Fortaleza a três quadrados de uma cidade amiga) deixa infeliz um cidadão em sua cidade-base.
+^
+^CORRUPÇÃO E DESPERDÍCIO
+A República tem BAIXO grau de corrupção e desperdício. O grau de corrupção em determinada cidade está ligado à distância da capital.
+^
+^ESPECIAL
+Na República, todo quadrado que normalmente produziria pelo menos um ícone de recurso (grãos, escudos, setas) produz um a mais. Na República, nenhuma das taxas de impostos/luxos/ciência que você estabelece pode ultrapassar 80%%.
+^
+^DICAS
+Mudar para a República pode impulsionar bastante a ciência e a receita tributária, embora você provavelmente tenha de desviar parte da riqueza para luxos. Fica mais difícil (e caro) manter um exército em campanha, mas criar a maravilha Sufrágio Feminino pode ajudar com esse problema.
+
+@PEDIAGOVT6
+@width=600
+@title=Governo da Civilização: Democracia
+^SUSTENTO DE UNIDADES
+Cada unidade custa um escudo por rodada. Cada Colonos come DOIS grãos por rodada.
+^
+^FELICIDADE
+Cada unidade militar que não esteja numa cidade amiga (ou numa Fortaleza a três quadrados de uma cidade amiga) deixa infelizes DOIS cidadãos em sua cidade-base.
+^
+^CORRUPÇÃO E DESPERDÍCIO
+As Democracias NÃO TÊM corrupção nem desperdício.
+^
+^ESPECIAL
+Na Democracia, todo quadrado que normalmente produziria pelo menos um ícone de recurso (grãos, escudos, setas) produz um a mais. As unidades e cidades de uma democracia são imunes a todo tipo de suborno. As taxas de impostos/luxos/ciência podem ser estabelecidas em qualquer nível desejado.
+^
+^DICAS
+As Democracias são capazes de produzir enormes receitas tributárias e muita ciência. No entanto, por causa das severas restrições de "felicidade" às unidades militares, esse tipo de governo tende a ser viável apenas para civilizações vastas e avançadas. Elevar a taxa de luxos e criar Maravilhas pode reduzir o problema.
+
+@;This line must remain at the end of this file!
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
